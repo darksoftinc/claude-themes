@@ -1,1 +1,6 @@
-{ "name": "tema", "version": "0.2.0", "description": "On iki hareketli tema ve onları anında değiştiren /tema komutu" }
+{
+  "name": "tema",
+  "version": "0.2.0",
+  "description": "On iki hareketli tema ve onları anında değiştiren /tema komutu",
+  "license": "MIT"
+}

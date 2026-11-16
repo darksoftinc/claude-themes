@@ -13,6 +13,7 @@ One plugin, one command: `/tema`
 ![Themes](https://img.shields.io/badge/themes-12-6f42c1?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-desktop%20%7C%20mobile-2ea44f?style=flat-square)
 ![Version](https://img.shields.io/badge/version-0.2.0-0969da?style=flat-square)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](LICENSE)
 
 [Gallery](#-gallery) · [Installation](#-installation) · [Usage](#-usage) · [How it works](#-how-it-works) · [Troubleshooting](#-troubleshooting)
 
@@ -171,5 +172,5 @@ claude plugin uninstall tema@claude-themes
 ---
 
 <div align="center">
-<sub>Every scene was drawn originally for this project.</sub>
+<sub>Every scene was drawn originally for this project · Released under the <a href="LICENSE">MIT License</a>.</sub>
 </div>
