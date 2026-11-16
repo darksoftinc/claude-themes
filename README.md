@@ -1,164 +1,166 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Claude Code Temaları — 12 hareketli tema" width="100%">
+<img src="assets/banner.svg" alt="Claude Code Themes — 12 animated themes" width="100%">
 
 <br>
 
-**Claude Code masaüstü ve mobil uygulaması için el yapımı, hareketli arka planlı 12 tema.**<br>
-Tek bir eklenti, tek bir komut: `/tema`
+**12 hand-crafted themes with animated backdrops for the Claude Code desktop and mobile apps.**<br>
+One plugin, one command: `/tema`
 
 <br>
 
-![Claude Code eklentisi](https://img.shields.io/badge/Claude%20Code-eklenti-d97757?style=flat-square)
-![Tema sayısı](https://img.shields.io/badge/tema-12-6f42c1?style=flat-square)
-![Platform](https://img.shields.io/badge/platform-masa%C3%BCst%C3%BC%20%7C%20mobil-2ea44f?style=flat-square)
-![Sürüm](https://img.shields.io/badge/s%C3%BCr%C3%BCm-0.2.0-0969da?style=flat-square)
+![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757?style=flat-square)
+![Themes](https://img.shields.io/badge/themes-12-6f42c1?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-desktop%20%7C%20mobile-2ea44f?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.2.0-0969da?style=flat-square)
 
-[Galeri](#-galeri) · [Kurulum](#-kurulum) · [Kullanım](#-kullanım) · [Nasıl çalışır](#-nasıl-çalışır) · [Sorun giderme](#-sorun-giderme)
+[Gallery](#-gallery) · [Installation](#-installation) · [Usage](#-usage) · [How it works](#-how-it-works) · [Troubleshooting](#-troubleshooting)
 
 </div>
 
 ---
 
-## ✨ Öne çıkanlar
+## ✨ Highlights
 
-- **12 özgün tema** — Her temanın kendi renk paleti ve kendi hareketli sahnesi var. Hepsi elle çizilmiş vektör grafikler.
-- **Anında geçiş** — `/tema neon` yazdığınız anda görünüm değişir; yeni sohbet açmanız gerekmez.
-- **Hatırlanan seçim** — Seçtiğiniz tema saklanır, yeni sohbetler de aynı temayla açılır.
-- **Gündüz ve gece** — Yedi tema iki modu da destekler; sahne gece moduna göre değişir (yıldızlar çıkar, pencereler yanar). Beşi koyu mod için tasarlandı.
-- **Okunabilirlik önce gelir** — Bütün paletler kontrast denetiminden geçer; paneller arka planın üstünde hafif buzlu camla okunur kalır.
-- **Hafif ve güvenli** — Sahneler saf SVG ve CSS'tir: script çalıştırmaz, dışarıdan hiçbir şey yüklemez. Sistemde "hareketi azalt" açıksa animasyonlar durur.
+- **12 original themes** — every theme ships its own color palette and its own animated scene, all hand-drawn vector art.
+- **Instant switching** — type `/tema neon` and the look changes on the spot; no new conversation needed.
+- **Remembers your pick** — the chosen theme is saved, and new conversations open with it.
+- **Light and dark** — seven themes support both modes and their scenes change at night (stars come out, windows light up). Five are designed for dark mode.
+- **Readability first** — every palette passes a contrast check, and panels stay legible over the backdrop behind a light frosted glass.
+- **Lightweight and safe** — scenes are pure SVG and CSS: no scripts, nothing loaded from the network. Animations pause when the system's "reduce motion" setting is on.
 
 ---
 
-## 🖼 Galeri
+## 🖼 Gallery
 
-> Önizlemeler gerçek sahnelerin kendisidir; animasyonlarını burada da görebilirsiniz.
+> The previews are the actual scenes — you can see them animate right here.
 
 <table>
 <tr>
-<td width="33%" align="center"><img src="assets/previews/kapadokya.svg" alt="Kapadokya" width="100%"><br><b>Kapadokya</b><br><sub>Peribacaları üzerinde yükselen balonlar</sub><br><code>/tema kapadokya</code> · ☀️🌙</td>
-<td width="33%" align="center"><img src="assets/previews/neon-gece.svg" alt="Neon Gece" width="100%"><br><b>Neon Gece</b><br><sub>Çizgili neon gün batımı ve kayan ızgara</sub><br><code>/tema neon</code> · 🌙</td>
-<td width="33%" align="center"><img src="assets/previews/aurora.svg" alt="Aurora" width="100%"><br><b>Aurora</b><br><sub>Dalgalanan kuzey ışıkları</sub><br><code>/tema aurora</code> · 🌙</td>
+<td width="33%" align="center"><img src="assets/previews/kapadokya.svg" alt="Kapadokya" width="100%"><br><b>Kapadokya</b><br><sub>Hot-air balloons rising over fairy chimneys</sub><br><code>/tema kapadokya</code> · ☀️🌙</td>
+<td width="33%" align="center"><img src="assets/previews/neon-gece.svg" alt="Neon Gece" width="100%"><br><b>Neon Gece</b><br><sub>Striped neon sunset and a scrolling grid</sub><br><code>/tema neon</code> · 🌙</td>
+<td width="33%" align="center"><img src="assets/previews/aurora.svg" alt="Aurora" width="100%"><br><b>Aurora</b><br><sub>Slowly drifting northern lights</sub><br><code>/tema aurora</code> · 🌙</td>
 </tr>
 <tr>
-<td align="center"><img src="assets/previews/nakkashane.svg" alt="Nakkaşhane" width="100%"><br><b>Nakkaşhane</b><br><sub>Minyatür üslubunda şehir, atlılar, tezhipli çerçeve</sub><br><code>/tema nakkas</code> · ☀️🌙</td>
-<td align="center"><img src="assets/previews/lale-bahcesi.svg" alt="Lale Bahçesi" width="100%"><br><b>Lale Bahçesi</b><br><sub>İznik çinisi ve rüzgârda sallanan laleler</sub><br><code>/tema lale</code> · ☀️🌙</td>
-<td align="center"><img src="assets/previews/derin-deniz.svg" alt="Derin Deniz" width="100%"><br><b>Derin Deniz</b><br><sub>Işıltılı denizanaları ve kabarcıklar</sub><br><code>/tema derin</code> · 🌙</td>
+<td align="center"><img src="assets/previews/nakkashane.svg" alt="Nakkaşhane" width="100%"><br><b>Nakkaşhane</b><br><sub>Ottoman-miniature city, riders and an illuminated frame</sub><br><code>/tema nakkas</code> · ☀️🌙</td>
+<td align="center"><img src="assets/previews/lale-bahcesi.svg" alt="Lale Bahçesi" width="100%"><br><b>Lale Bahçesi</b><br><sub>Iznik tiles and tulips swaying in the wind</sub><br><code>/tema lale</code> · ☀️🌙</td>
+<td align="center"><img src="assets/previews/derin-deniz.svg" alt="Derin Deniz" width="100%"><br><b>Derin Deniz</b><br><sub>Glowing jellyfish and rising bubbles</sub><br><code>/tema derin</code> · 🌙</td>
 </tr>
 <tr>
-<td align="center"><img src="assets/previews/kis-ormani.svg" alt="Kış Ormanı" width="100%"><br><b>Kış Ormanı</b><br><sub>Karlı çamlar, tüten baca, kar yağışı</sub><br><code>/tema kis</code> · ☀️🌙</td>
-<td align="center"><img src="assets/previews/murekkep.svg" alt="Mürekkep" width="100%"><br><b>Mürekkep</b><br><sub>Mürekkep lekesi dağlar, sis ve mühür</sub><br><code>/tema murekkep</code> · ☀️🌙</td>
-<td align="center"><img src="assets/previews/mavi-kopya.svg" alt="Mavi Kopya" width="100%"><br><b>Mavi Kopya</b><br><sub>Kendini çizen teknik çizim ve dişliler</sub><br><code>/tema mavi</code> · 🌙</td>
+<td align="center"><img src="assets/previews/kis-ormani.svg" alt="Kış Ormanı" width="100%"><br><b>Kış Ormanı</b><br><sub>Snowy pines, a smoking chimney and falling snow</sub><br><code>/tema kis</code> · ☀️🌙</td>
+<td align="center"><img src="assets/previews/murekkep.svg" alt="Mürekkep" width="100%"><br><b>Mürekkep</b><br><sub>Ink-wash mountains, mist and a red seal</sub><br><code>/tema murekkep</code> · ☀️🌙</td>
+<td align="center"><img src="assets/previews/mavi-kopya.svg" alt="Mavi Kopya" width="100%"><br><b>Mavi Kopya</b><br><sub>A blueprint that draws itself, with turning gears</sub><br><code>/tema mavi</code> · 🌙</td>
 </tr>
 <tr>
-<td align="center"><img src="assets/previews/bauhaus.svg" alt="Bauhaus" width="100%"><br><b>Bauhaus</b><br><sub>Ana renklerde geometrik kompozisyon</sub><br><code>/tema bauhaus</code> · ☀️🌙</td>
-<td align="center"><img src="assets/previews/yorunge.svg" alt="Yörünge" width="100%"><br><b>Yörünge</b><br><sub>Dönen gezegenler ve yıldız alanı</sub><br><code>/tema yorunge</code> · 🌙</td>
-<td align="center"><img src="assets/previews/topografya.svg" alt="Topografya" width="100%"><br><b>Topografya</b><br><sub>Eş yükselti eğrili harita ve kendini çizen rota</sub><br><code>/tema topo</code> · ☀️🌙</td>
+<td align="center"><img src="assets/previews/bauhaus.svg" alt="Bauhaus" width="100%"><br><b>Bauhaus</b><br><sub>A geometric composition in primary colors</sub><br><code>/tema bauhaus</code> · ☀️🌙</td>
+<td align="center"><img src="assets/previews/yorunge.svg" alt="Yörünge" width="100%"><br><b>Yörünge</b><br><sub>Orbiting planets and a starfield</sub><br><code>/tema yorunge</code> · 🌙</td>
+<td align="center"><img src="assets/previews/topografya.svg" alt="Topografya" width="100%"><br><b>Topografya</b><br><sub>A contour map with a route that draws itself</sub><br><code>/tema topo</code> · ☀️🌙</td>
 </tr>
 </table>
 
-<sub>☀️🌙 gündüz ve gece modu · 🌙 koyu mod için tasarlandı</sub>
+<sub>☀️🌙 light and dark mode · 🌙 designed for dark mode</sub>
 
 ---
 
-## 📦 Kurulum
+## 📦 Installation
 
-### Claude Code masaüstü uygulaması
+### Claude Code desktop app
 
-1. Mesaj kutusunun yanındaki **+** düğmesine tıklayın ve **Plugins**'i seçin.
-2. **Add marketplace**'e tıklayıp `darksoftinc/claude-themes` yazın.
-3. Listeden **tema** eklentisini ekleyin.
-4. Yeni bir sohbet açın: varsayılan tema **Kapadokya** ile başlar.
+1. Click the **+** button next to the message box and choose **Plugins**.
+2. Click **Add marketplace** and enter `darksoftinc/claude-themes`.
+3. Add the **tema** plugin from the list.
+4. Start a new conversation — it opens with the default theme, **Kapadokya**.
 
 ### Terminal
 
-Bir Claude Code oturumunun içinde:
+Inside a Claude Code session:
 
 ```text
 /plugin install tema --marketplace darksoftinc/claude-themes
 ```
 
-ya da doğrudan kabukta:
+or straight from your shell:
 
 ```bash
 claude plugin install tema --marketplace darksoftinc/claude-themes
 ```
 
 > [!NOTE]
-> Temalar masaüstü ve mobil uygulamada çizilir. Terminal ve editör eklentileri arka plan çizmez; komut orada da çalışır ve seçiminizi kaydeder.
+> Themes are drawn by the desktop and mobile apps. The terminal and editor extensions don't draw backdrops; the command still works there and saves your choice.
 
 ---
 
-## 🎛 Kullanım
+## 🎛 Usage
 
-| Komut | Ne yapar |
+| Command | What it does |
 |---|---|
-| `/tema` | Bütün temaları listeler, açık olanı ● ile işaretler |
-| `/tema <ad>` | O temaya hemen geçer ve seçimi kaydeder |
-| `/tema kapali` | Temayı kapatır, uygulamanın kendi görünümüne döner |
+| `/tema` | Lists every theme and marks the active one with ● |
+| `/tema <name>` | Switches to that theme right away and saves the choice |
+| `/tema kapali` | Turns theming off and returns to the app's own look |
 
-Adın tamamını yazmanız gerekmez, baş harfleri yeter. Türkçe karakterler de tanınır:
+You don't need the full name — the first letters are enough, and Turkish characters are optional:
 
 ```text
 /tema neon          → Neon Gece
-/tema Kış Ormanı    → Kış Ormanı
+/tema kis ormani    → Kış Ormanı
 /tema yor           → Yörünge
 ```
 
+> The command's own messages are in Turkish.
+
 ---
 
-## 🧩 Nasıl çalışır
+## 🧩 How it works
 
-Eklenti, Claude Code'un eklenti arayüzünü kullanan tek bir hooks modülüdür:
+The plugin is a single hooks module built on Claude Code's plugin interface:
 
-1. **Oturum başında** kayıtlı temayı okur ve uygulamaya renk paletiyle sahneyi gönderir.
-2. **Renk paleti** birkaç ana renkten (yüzeyler, metin tonları, vurgu, tehlike, başarı ve uyarı renkleri) tasarım sisteminin bütün renk değerlerine genişletilir ve kontrast için denetlenir.
-3. **Sahne**, konuşmanın arkasına çizilen tek bir SVG'dir. Animasyonlar SVG'nin içindeki CSS ile yapılır; gece modu sahneye `prefers-color-scheme` üzerinden yansır.
-4. **`/tema` komutu** seçimi kalıcı depoya yazar ve temayı o anda yeniden uygular.
+1. **At session start** it reads the saved theme and sends the app its color palette and scene.
+2. **The palette** grows a handful of seed colors (surfaces, text tones, accent, danger, success and warning) into the design system's full set of color tokens, checked for contrast.
+3. **The scene** is a single SVG drawn behind the conversation. Animations are CSS inside the SVG; dark mode reaches the scene through `prefers-color-scheme`.
+4. **The `/tema` command** writes your choice to persistent storage and re-applies the theme immediately.
 
 ```text
 .
 ├── .claude-plugin/
-│   ├── plugin.json        # eklenti bilgisi
-│   └── marketplace.json   # bu deponun kurulum kaynağı olması için
+│   ├── plugin.json        # plugin manifest
+│   └── marketplace.json   # makes this repo an install source
 ├── hooks/
-│   ├── hooks.json         # modülün adı
-│   ├── register.tsx       # 12 tema ve /tema komutu
-│   ├── make-colors.js     # paleti tasarım sistemi renklerine genişletir
-│   └── tema.test.tsx      # komutun testleri
-└── assets/                # README görselleri
+│   ├── hooks.json         # names the module
+│   ├── register.tsx       # the 12 themes and the /tema command
+│   ├── make-colors.js     # expands a palette into design-system tokens
+│   └── tema.test.tsx      # tests for the command
+└── assets/                # README images
 ```
 
 ---
 
-## 🛠 Sorun giderme
+## 🛠 Troubleshooting
 
 <details>
-<summary><b>Tema görünmüyor</b></summary>
+<summary><b>The theme doesn't show up</b></summary>
 
-- Masaüstü veya mobil uygulamada olduğunuzdan emin olun; terminal arka plan çizmez.
-- Kurulumdan sonra **yeni bir sohbet** açın; eklentiler sohbet başlarken yüklenir.
-- Koyu mod için tasarlanmış temalar (🌙) en iyi koyu modda görünür.
+- Make sure you're in the desktop or mobile app — the terminal doesn't draw backdrops.
+- Start a **new conversation** after installing; plugins load when a conversation starts.
+- Themes marked 🌙 look their best in dark mode.
 
 </details>
 
 <details>
-<summary><b>İki tema birbirine karışıyor</b></summary>
+<summary><b>Two themes are mixing</b></summary>
 
-Aynı anda yalnızca bir tema eklentisi açık olmalı. Bu depoyu birden fazla kaynaktan kurduysanız ya da başka bir tema eklentiniz varsa, **Plugins** menüsünden yalnızca birini açık bırakın.
-
-</details>
-
-<details>
-<summary><b>Yazılar arka planın üstünde zor okunuyor</b></summary>
-
-Daha sade bir tema deneyin (`/tema murekkep`, `/tema topo`) ya da `/tema kapali` ile uygulamanın kendi görünümüne dönün.
+Only one theme plugin should be enabled at a time. If you installed this repo from more than one source, or have another theme plugin, leave just one enabled in the **Plugins** menu.
 
 </details>
 
 <details>
-<summary><b>Kaldırma</b></summary>
+<summary><b>Text is hard to read over the backdrop</b></summary>
+
+Try a calmer theme (`/tema murekkep`, `/tema topo`), or go back to the app's own look with `/tema kapali`.
+
+</details>
+
+<details>
+<summary><b>Uninstalling</b></summary>
 
 ```bash
 claude plugin uninstall tema@claude-themes
@@ -169,5 +171,5 @@ claude plugin uninstall tema@claude-themes
 ---
 
 <div align="center">
-<sub>Bütün sahneler bu proje için özgün olarak çizilmiştir.</sub>
+<sub>Every scene was drawn originally for this project.</sub>
 </div>
