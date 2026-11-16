@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#9fb6d8"/><stop offset="0.45" stop-color="#e9c3c0"/><stop offset="0.75" stop-color="#f7d6a8"/><stop offset="1" stop-color="#f3c48e"/>
+  </linearGradient>
+  <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff3d6"/><stop offset="0.35" stop-color="#ffd98f" stop-opacity="0.9"/><stop offset="1" stop-color="#ffb46b" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffcf6b" stop-opacity="0.9"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient>
+  <g id="balloon">
+    <path d="M0 -120 C-62 -120 -78 -60 -60 -20 C-46 10 -18 30 -12 46 L12 46 C18 30 46 10 60 -20 C78 -60 62 -120 0 -120 Z" fill="var(--a, #d9483b)" stroke="#5a2a1e" stroke-width="2"/>
+    <path d="M0 -120 C-30 -120 -36 -60 -28 -20 C-22 10 -10 30 -6 46 L6 46 C10 30 22 10 28 -20 C36 -60 30 -120 0 -120 Z" fill="var(--b, #f2c14e)" stroke="#5a2a1e" stroke-width="1.5"/>
+    <path d="M0 -120 C-8 -120 -10 -60 -6 -20 L-2 46 L2 46 L6 -20 C10 -60 8 -120 0 -120 Z" fill="var(--a, #d9483b)"/>
+    <path d="M-66 -40 Q0 -24 66 -40" fill="none" stroke="#5a2a1e" stroke-width="1.5"/>
+    <path d="M-12 46 L-10 62 M12 46 L10 62" stroke="#5a2a1e" stroke-width="1.5"/>
+    <circle class="burn" cx="0" cy="50" r="22" fill="url(#glow)"/>
+    <rect x="-12" y="62" width="24" height="18" rx="3" fill="#8a5a34" stroke="#4a2e1a" stroke-width="1.5"/>
+  </g>
+  <g id="chimney">
+    <path d="M-38 0 C-30 -60 -18 -130 -10 -170 L10 -170 C18 -130 30 -60 38 0 Z" fill="#e6c8a2" stroke="#9c7650" stroke-width="2"/>
+    <path d="M-28 -170 Q0 -196 28 -170 Q0 -160 -28 -170 Z" fill="#8a6545" stroke="#5e4029" stroke-width="2"/>
+    <rect class="win" x="-6" y="-110" width="10" height="14" rx="5" fill="#5e4029"/><rect class="win" x="-14" y="-60" width="9" height="12" rx="4.5" fill="#5e4029"/>
+  </g>
+</defs>
+<style>
+  .rise { animation: rise 60s linear infinite; }
+  .r2 { animation-duration: 75s; animation-delay: -30s; } .r3 { animation-duration: 90s; animation-delay: -55s; } .r4 { animation-duration: 68s; animation-delay: -12s; }
+  .r5 { animation-duration: 82s; animation-delay: -44s; } .r6 { animation-duration: 95s; animation-delay: -70s; }
+  @keyframes rise { from { transform: translateY(560px); } to { transform: translateY(-900px); } }
+  .bob { animation: bob 7s ease-in-out infinite alternate; }
+  @keyframes bob { from { transform: translateX(-18px); } to { transform: translateX(22px); } }
+  .burn { opacity: 0; animation: burn 6s ease-in-out infinite; }
+  @keyframes burn { 0%, 70%, 100% { opacity: 0; } 78%, 86% { opacity: 1; } }
+  .sun { animation: sunrise 40s ease-out infinite alternate; }
+  @keyframes sunrise { from { transform: translateY(40px); } to { transform: translateY(-30px); } }
+  .night, .stars { opacity: 0; }
+  .star { animation: tw 4s ease-in-out infinite alternate; } .star:nth-child(2n) { animation-delay: -2s; }
+  @keyframes tw { from { opacity: 0.3; } to { opacity: 1; } }
+  @media (prefers-color-scheme: dark) {
+    .night { opacity: 0.7; } .stars { opacity: 1; } .sun { opacity: 0.15; }
+    .burn { animation-duration: 3.5s; } .win { fill: #ffc76b; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<circle class="sun" cx="1150" cy="720" r="240" fill="url(#sun)"/>
+<rect class="night" width="1600" height="1000" fill="#1a1230"/>
+<g class="stars" fill="#fff1d6">
+  <circle class="star" cx="140" cy="90" r="2"/><circle class="star" cx="420" cy="160" r="1.6"/><circle class="star" cx="760" cy="70" r="2"/>
+  <circle class="star" cx="980" cy="200" r="1.5"/><circle class="star" cx="1260" cy="110" r="2.2"/><circle class="star" cx="1500" cy="220" r="1.6"/>
+</g>
+<path d="M-20 760 Q200 690 420 730 Q640 660 860 720 Q1100 650 1340 710 Q1480 680 1620 700 L1620 1020 L-20 1020 Z" fill="#d8b48c" opacity="0.7"/>
+<g class="rise"><g class="bob"><use href="#balloon" x="260" y="520" style="--a:#d9483b;--b:#f2c14e"/></g></g>
+<g class="rise r2"><g class="bob" style="animation-delay:-3s"><use href="#balloon" x="1380" y="460" transform="scale(0.8)" style="--a:#2f7fb8;--b:#f4ede1"/></g></g>
+<g class="rise r3"><g class="bob" style="animation-delay:-5s"><use href="#balloon" x="900" y="700" transform="scale(0.55)" style="--a:#3d8a5a;--b:#f2c14e"/></g></g>
+<g class="rise r4"><g class="bob" style="animation-delay:-1s"><use href="#balloon" x="1650" y="1100" transform="scale(0.45)" style="--a:#8a4fb0;--b:#f7a3b5"/></g></g>
+<g class="rise r5"><g class="bob" style="animation-delay:-4s"><use href="#balloon" x="140" y="1300" transform="scale(0.4)" style="--a:#f08a3c;--b:#ffffff"/></g></g>
+<g class="rise r6"><g class="bob" style="animation-delay:-2s"><use href="#balloon" x="1880" y="900" transform="scale(0.6)" style="--a:#d9483b;--b:#2f7fb8"/></g></g>
+<path d="M-20 860 Q260 810 520 850 Q800 800 1080 846 Q1340 806 1620 840 L1620 1020 L-20 1020 Z" fill="#c99a6e"/>
+<use href="#chimney" x="90" y="900"/><use href="#chimney" x="170" y="920" transform="scale(1)"/><use href="#chimney" x="1460" y="905"/><use href="#chimney" x="1540" y="930"/>
+<use href="#chimney" x="380" y="940"/><use href="#chimney" x="1240" y="945"/>
+<path d="M-20 930 Q300 900 640 925 Q980 900 1300 922 Q1460 912 1620 920 L1620 1020 L-20 1020 Z" fill="#b5835a"/>
+</svg>

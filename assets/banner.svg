@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="0.55" stop-color="#1a1033"/><stop offset="1" stop-color="#2a0b45"/></linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff4fb4" stop-opacity="0.35"/><stop offset="1" stop-color="#ff4fb4" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4fd1a5" stop-opacity="0.3"/><stop offset="1" stop-color="#4fd1a5" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#ffffff" stroke-opacity="0.05"/></pattern>
+  <linearGradient id="t1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3c48e"/><stop offset="1" stop-color="#9fb6d8"/></linearGradient>
+  <linearGradient id="t2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff2f9a"/><stop offset="1" stop-color="#2a0b45"/></linearGradient>
+  <linearGradient id="t3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4fd1a5"/><stop offset="1" stop-color="#0b1020"/></linearGradient>
+  <linearGradient id="t4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2bd62"/><stop offset="1" stop-color="#1d3a6e"/></linearGradient>
+  <linearGradient id="t5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2bb3b1"/><stop offset="1" stop-color="#1f4fa3"/></linearGradient>
+  <linearGradient id="t6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3fd6c6"/><stop offset="1" stop-color="#06141c"/></linearGradient>
+  <linearGradient id="t7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef4f8"/><stop offset="1" stop-color="#2c5546"/></linearGradient>
+  <linearGradient id="t8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efebe2"/><stop offset="1" stop-color="#1d1c1a"/></linearGradient>
+  <linearGradient id="t9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cc4ff"/><stop offset="1" stop-color="#0a2547"/></linearGradient>
+  <linearGradient id="t10" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2c230"/><stop offset="1" stop-color="#d0342c"/></linearGradient>
+  <linearGradient id="t11" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#07080d"/></linearGradient>
+  <linearGradient id="t12" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9ede5"/><stop offset="1" stop-color="#4f7a6a"/></linearGradient>
+</defs>
+<style>
+  .tile { animation: float 6s ease-in-out infinite alternate; }
+  .tile:nth-child(2n) { animation-delay: -1.5s; } .tile:nth-child(3n) { animation-delay: -3s; } .tile:nth-child(4n) { animation-delay: -4.5s; }
+  @keyframes float { from { transform: translateY(6px); } to { transform: translateY(-6px); } }
+  .orb { animation: orb 14s ease-in-out infinite alternate; }
+  @keyframes orb { from { transform: translate(-40px, 0); } to { transform: translate(40px, 20px); } }
+  text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1600" height="480" rx="28" fill="url(#bg)"/>
+<rect width="1600" height="480" rx="28" fill="url(#grid)"/>
+<circle class="orb" cx="1320" cy="120" r="260" fill="url(#glow)"/>
+<circle class="orb" cx="220" cy="420" r="240" fill="url(#glow2)" style="animation-direction: alternate-reverse"/>
+<text x="800" y="150" text-anchor="middle" font-size="76" font-weight="700" fill="#ffffff" letter-spacing="-1">Claude Code Temaları</text>
+<text x="800" y="208" text-anchor="middle" font-size="28" fill="#c9c3e6">12 hareketli tema  ·  tek komutla geçiş  ·  masaüstü ve mobil</text>
+<g transform="translate(116 280)">
+  <g class="tile"><rect x="0" width="96" height="96" rx="20" fill="url(#t1)"/></g>
+  <g class="tile"><rect x="116" width="96" height="96" rx="20" fill="url(#t2)"/></g>
+  <g class="tile"><rect x="232" width="96" height="96" rx="20" fill="url(#t3)"/></g>
+  <g class="tile"><rect x="348" width="96" height="96" rx="20" fill="url(#t4)"/></g>
+  <g class="tile"><rect x="464" width="96" height="96" rx="20" fill="url(#t5)"/></g>
+  <g class="tile"><rect x="580" width="96" height="96" rx="20" fill="url(#t6)"/></g>
+  <g class="tile"><rect x="696" width="96" height="96" rx="20" fill="url(#t7)"/></g>
+  <g class="tile"><rect x="812" width="96" height="96" rx="20" fill="url(#t8)"/></g>
+  <g class="tile"><rect x="928" width="96" height="96" rx="20" fill="url(#t9)"/></g>
+  <g class="tile"><rect x="1044" width="96" height="96" rx="20" fill="url(#t10)"/></g>
+  <g class="tile"><rect x="1160" width="96" height="96" rx="20" fill="url(#t11)"/></g>
+  <g class="tile"><rect x="1276" width="96" height="96" rx="20" fill="url(#t12)"/></g>
+</g>
+<text x="800" y="440" text-anchor="middle" font-size="22" fill="#8f88b3" font-family="Consolas, 'Courier New', monospace">/tema neon   ·   /tema kapadokya   ·   /tema yorunge</text>
+</svg>

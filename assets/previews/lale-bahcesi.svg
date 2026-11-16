@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <g id="petal"><path d="M0 -12 C14 -30 14 -52 0 -64 C-14 -52 -14 -30 0 -12 Z" fill="#1f4fa3" stroke="#14336b" stroke-width="1.2"/><path d="M0 -22 C6 -32 6 -44 0 -52 C-6 -44 -6 -32 0 -22 Z" fill="#2bb3b1"/></g>
+  <g id="tulipsm"><path d="M0 0 C-10 -6 -12 -22 -6 -32 L-2 -24 L0 -36 L2 -24 L6 -32 C12 -22 10 -6 0 0 Z" fill="#c8372d" stroke="#7a1f1a" stroke-width="1"/><path d="M0 0 V14" stroke="#2f7d4a" stroke-width="2.5"/></g>
+  <pattern id="tile" width="200" height="200" patternUnits="userSpaceOnUse">
+    <rect width="200" height="200" fill="#f7f9fb"/>
+    <g transform="translate(100 100)">
+      <use href="#petal"/><use href="#petal" transform="rotate(45)"/><use href="#petal" transform="rotate(90)"/><use href="#petal" transform="rotate(135)"/>
+      <use href="#petal" transform="rotate(180)"/><use href="#petal" transform="rotate(225)"/><use href="#petal" transform="rotate(270)"/><use href="#petal" transform="rotate(315)"/>
+      <circle r="16" fill="#c8372d" stroke="#7a1f1a" stroke-width="1.5"/><circle r="7" fill="#f7f9fb"/>
+    </g>
+    <g fill="#2bb3b1" stroke="#1f4fa3" stroke-width="3">
+      <circle cx="0" cy="0" r="30"/><circle cx="200" cy="0" r="30"/><circle cx="0" cy="200" r="30"/><circle cx="200" cy="200" r="30"/>
+    </g>
+    <g fill="#c8372d"><circle cx="0" cy="0" r="10"/><circle cx="200" cy="0" r="10"/><circle cx="0" cy="200" r="10"/><circle cx="200" cy="200" r="10"/></g>
+    <use href="#tulipsm" x="100" y="196" transform="rotate(180 100 180)"/><use href="#tulipsm" x="100" y="20"/>
+    <use href="#tulipsm" x="20" y="100" transform="rotate(-90 20 100)"/><use href="#tulipsm" x="180" y="100" transform="rotate(90 180 100)"/>
+    <path d="M30 60 Q60 40 70 10 M170 140 Q140 160 130 190 M140 30 Q160 60 190 70 M60 170 Q40 140 10 130" fill="none" stroke="#2f7d4a" stroke-width="2"/>
+    <rect width="200" height="200" fill="none" stroke="#14336b" stroke-width="2" stroke-opacity="0.35"/>
+  </pattern>
+  <g id="tulip">
+    <path d="M0 0 C-6 -60 4 -120 0 -180" fill="none" stroke="#2f7d4a" stroke-width="6"/>
+    <path d="M0 -40 C-40 -60 -60 -110 -50 -140 C-30 -110 -10 -80 0 -60 Z" fill="#3c8a52" stroke="#1f5a33" stroke-width="1.5"/>
+    <path d="M2 -70 C40 -90 52 -130 40 -160 C26 -130 12 -104 2 -90 Z" fill="#3c8a52" stroke="#1f5a33" stroke-width="1.5"/>
+    <path d="M0 -176 C-26 -186 -30 -230 -18 -262 L-8 -232 L0 -272 L8 -232 L18 -262 C30 -230 26 -186 0 -176 Z" fill="var(--c, #c8372d)" stroke="#5e1712" stroke-width="2"/>
+    <path d="M0 -182 C-8 -200 -8 -226 0 -248 C8 -226 8 -200 0 -182 Z" fill="#ffffff" fill-opacity="0.25"/>
+  </g>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9fb" stop-opacity="0"/><stop offset="1" stop-color="#f7f9fb" stop-opacity="0.85"/></linearGradient>
+</defs>
+<style>
+  .sway { transform-box: fill-box; transform-origin: bottom center; animation: sway 5s ease-in-out infinite alternate; }
+  .d1 { animation-duration: 6.2s; animation-delay: -2s; } .d2 { animation-duration: 4.4s; animation-delay: -1s; } .d3 { animation-duration: 7s; animation-delay: -3.5s; }
+  @keyframes sway { from { transform: rotate(-4deg); } to { transform: rotate(4deg); } }
+  .petalf { animation: fall 22s linear infinite; }
+  .p2 { animation-duration: 28s; animation-delay: -9s; } .p3 { animation-duration: 25s; animation-delay: -16s; }
+  @keyframes fall { from { transform: translate(0, -120px) rotate(0deg); } to { transform: translate(-260px, 1150px) rotate(540deg); } }
+  .shine { animation: shine 9s ease-in-out infinite alternate; }
+  @keyframes shine { from { opacity: 0; } to { opacity: 0.18; } }
+  .night { opacity: 0; }
+  @media (prefers-color-scheme: dark) { .night { opacity: 0.55; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1600" height="1000" fill="url(#tile)"/>
+<rect class="shine" width="1600" height="1000" fill="#ffffff"/>
+<rect y="640" width="1600" height="360" fill="url(#fade)"/>
+<rect class="night" width="1600" height="1000" fill="#07101f"/>
+<g>
+  <g class="sway"><use href="#tulip" x="80" y="1010"/></g>
+  <g class="sway d1"><use href="#tulip" x="170" y="1030" style="--c:#e0583c"/></g>
+  <g class="sway d2"><use href="#tulip" x="250" y="1010" style="--c:#1f4fa3"/></g>
+  <g class="sway d3"><use href="#tulip" x="1300" y="1020" style="--c:#e0583c"/></g>
+  <g class="sway"><use href="#tulip" x="1390" y="1005"/></g>
+  <g class="sway d2"><use href="#tulip" x="1480" y="1030" style="--c:#1f4fa3"/></g>
+  <g class="sway d1"><use href="#tulip" x="1560" y="1010"/></g>
+</g>
+<g fill="#c8372d">
+  <path class="petalf" d="M1200 0 c8 -10 20 -10 22 0 c-4 10 -16 12 -22 0 Z"/>
+  <path class="petalf p2" d="M600 0 c8 -10 20 -10 22 0 c-4 10 -16 12 -22 0 Z" fill="#1f4fa3"/>
+  <path class="petalf p3" d="M950 0 c8 -10 20 -10 22 0 c-4 10 -16 12 -22 0 Z"/>
+</g>
+</svg>

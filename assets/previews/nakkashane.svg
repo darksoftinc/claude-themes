@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+<defs>
+  <g id="rider">
+    <g fill="currentColor" stroke="#3b2a1a" stroke-width="1.4">
+      <rect class="leg la" x="22" y="-42" width="7" height="42"/><rect class="leg lb" x="33" y="-42" width="7" height="42"/>
+      <rect class="leg lb" x="-34" y="-42" width="7" height="42"/><rect class="leg la" x="-23" y="-42" width="7" height="42"/>
+      <path d="M-44 -58 Q-68 -40 -58 -12" fill="none" stroke="#3b2a1a" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="0" cy="-52" rx="46" ry="19"/>
+      <path d="M28 -64 L50 -104 L64 -98 L46 -50 Z"/>
+      <path d="M50 -104 L80 -88 L76 -79 L56 -90 Z"/>
+      <path d="M52 -104 l2 -10 l5 9 Z"/>
+    </g>
+    <path d="M30 -66 L50 -104" stroke="#3b2a1a" stroke-width="5"/>
+    <rect x="-22" y="-74" width="40" height="26" fill="#c4352c" stroke="#d4a84a" stroke-width="3"/>
+    <path d="M-12 -70 L12 -70 L8 -112 L-10 -112 Z" fill="var(--k, #2a5d3a)" stroke="#3b2a1a" stroke-width="1.4"/>
+    <path d="M0 -70 L6 -44" stroke="#3b2a1a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="-1" cy="-121" r="8.5" fill="#e9c7a0" stroke="#3b2a1a" stroke-width="1.2"/>
+    <ellipse cx="-1" cy="-133" rx="12" ry="9" fill="#f7f2e6" stroke="#3b2a1a" stroke-width="1.2"/>
+    <circle cx="-1" cy="-141" r="3" fill="#c4352c"/>
+    <line x1="10" y1="-100" x2="34" y2="-176" stroke="#3b2a1a" stroke-width="2.5"/>
+    <path class="flag" d="M34 -176 l30 8 l-26 8 Z" fill="var(--p, #c4352c)" stroke="#3b2a1a" stroke-width="1"/>
+    <path d="M6 -104 L22 -96" stroke="var(--k, #2a5d3a)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#e2bd62"/><stop offset="1" stop-color="#f0d89a"/>
+  </linearGradient>
+  <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2f5f9e"/><stop offset="1" stop-color="#1d3f72"/>
+  </linearGradient>
+  <pattern id="waves" width="40" height="22" patternUnits="userSpaceOnUse">
+    <path d="M0 16 Q10 4 20 16 T40 16" fill="none" stroke="#dbe6f3" stroke-width="2" stroke-opacity="0.7"/>
+  </pattern>
+  <pattern id="flowers" width="70" height="60" patternUnits="userSpaceOnUse">
+    <g stroke="#3b2a1a" stroke-width="0.8">
+      <circle cx="12" cy="14" r="4" fill="#c4352c"/><circle cx="12" cy="14" r="1.4" fill="#f2d16b"/>
+      <circle cx="47" cy="38" r="3.5" fill="#f4efe2"/><circle cx="47" cy="38" r="1.2" fill="#c4352c"/>
+    </g>
+    <path d="M12 18 v8 M47 41.5 v7" stroke="#2f5a2a" stroke-width="1.2"/>
+  </pattern>
+  <pattern id="merlon" width="24" height="14" patternUnits="userSpaceOnUse">
+    <rect x="2" y="0" width="13" height="14" fill="#c9a77a" stroke="#3b2a1a" stroke-width="1.2"/>
+  </pattern>
+  <pattern id="stripes" width="16" height="10" patternUnits="userSpaceOnUse">
+    <rect width="8" height="10" fill="#c4352c"/><rect x="8" width="8" height="10" fill="#f4efe2"/>
+  </pattern>
+  <g id="cypress"><path d="M0 0 C-14 40 -16 90 -10 130 L10 130 C16 90 14 40 0 0 Z" fill="#2e5a3a" stroke="#3b2a1a" stroke-width="1.5"/><rect x="-3" y="130" width="6" height="12" fill="#6b4a2a"/></g>
+  <g id="minaret">
+    <rect x="-7" y="0" width="14" height="230" fill="#f3ead8" stroke="#3b2a1a" stroke-width="1.5"/>
+    <rect x="-11" y="60" width="22" height="7" fill="#e6d7b8" stroke="#3b2a1a" stroke-width="1.2"/>
+    <rect x="-11" y="110" width="22" height="7" fill="#e6d7b8" stroke="#3b2a1a" stroke-width="1.2"/>
+    <polygon points="-8,0 8,0 0,-46" fill="#7f95ad" stroke="#3b2a1a" stroke-width="1.5"/>
+    <line x1="0" y1="-46" x2="0" y2="-58" stroke="#b8902e" stroke-width="2"/>
+  </g>
+  <g id="house"><rect x="0" y="12" width="38" height="30" fill="#f1e4c8" stroke="#3b2a1a" stroke-width="1.2"/><polygon points="-4,14 19,-4 42,14" fill="#b5432f" stroke="#3b2a1a" stroke-width="1.2"/><rect class="win" x="8" y="22" width="7" height="10" fill="#4a3826"/><rect class="win" x="23" y="22" width="7" height="10" fill="#4a3826"/></g>
+  <g id="bird"><path d="M-12 0 Q-6 -7 0 0 Q6 -7 12 0" fill="none" stroke="#3b2a1a" stroke-width="2"/></g>
+  <g id="galley">
+    <path d="M-110 0 L110 0 Q100 26 70 30 L-80 30 Q-105 22 -110 0 Z" fill="#7a3b2a" stroke="#3b2a1a" stroke-width="1.6"/>
+    <path d="M-80 30 l-12 14 M-55 30 l-12 14 M-30 30 l-12 14 M-5 30 l-12 14 M20 30 l-12 14 M45 30 l-12 14" stroke="#3b2a1a" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="-110" stroke="#3b2a1a" stroke-width="3"/>
+    <path d="M-60 -95 Q0 -60 50 -10 L-60 -10 Z" fill="#f4efe2" stroke="#3b2a1a" stroke-width="1.5"/>
+    <path class="flag" d="M0 -110 l34 7 l-34 7 Z" fill="#c4352c" stroke="#3b2a1a" stroke-width="1"/>
+    <rect x="80" y="-14" width="26" height="14" fill="#b8902e" stroke="#3b2a1a" stroke-width="1.2"/>
+  </g>
+  <g id="tent">
+    <path d="M-70 80 L-70 30 Q0 -40 70 30 L70 80 Z" fill="url(#stripes)" stroke="#3b2a1a" stroke-width="1.8"/>
+    <path d="M-70 30 Q0 50 70 30" fill="none" stroke="#3b2a1a" stroke-width="1.5"/>
+    <path d="M-14 80 L0 44 L14 80 Z" fill="#3b2a1a"/>
+    <line x1="0" y1="-12" x2="0" y2="-60" stroke="#3b2a1a" stroke-width="2.5"/>
+    <path class="flag" d="M0 -60 q20 4 40 0 q-6 8 0 16 q-20 4 -40 0 Z" fill="#2a5d3a" stroke="#3b2a1a" stroke-width="1"/>
+  </g>
+</defs>
+<style>
+  .sun-rays { transform-box: fill-box; transform-origin: center; animation: spin 90s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .cloud { animation: drift 70s ease-in-out infinite alternate; }
+  .cloud.c2 { animation-duration: 95s; animation-direction: alternate-reverse; }
+  @keyframes drift { from { transform: translateX(-60px); } to { transform: translateX(80px); } }
+  .flag { transform-box: fill-box; transform-origin: left center; animation: wave 2.6s ease-in-out infinite alternate; }
+  @keyframes wave { from { transform: skewY(-6deg) scaleX(0.92); } to { transform: skewY(5deg) scaleX(1.04); } }
+  .flock { animation: fly 48s linear infinite; }
+  @keyframes fly { from { transform: translate(-200px, 40px); } to { transform: translate(1800px, -20px); } }
+  .flock use { animation: flap 0.9s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+  @keyframes flap { to { transform: scaleY(0.4); } }
+  .boat1 { animation: bob 5s ease-in-out infinite alternate; }
+  .boat2 { animation: bob 6.5s ease-in-out infinite alternate-reverse; }
+  @keyframes bob { from { transform: translateY(0) rotate(-1deg); } to { transform: translateY(6px) rotate(1deg); } }
+  .waves { animation: slide 12s linear infinite; }
+  @keyframes slide { to { transform: translateX(40px); } }
+  .night, .stars, .moon { opacity: 0; }
+  .star { animation: twinkle 4s ease-in-out infinite alternate; }
+  .star:nth-child(2n) { animation-delay: -1.5s; } .star:nth-child(3n) { animation-delay: -2.8s; }
+  @keyframes twinkle { from { opacity: 0.3; } to { opacity: 1; } }
+  @media (prefers-color-scheme: dark) {
+    .night { opacity: 0.62; }
+    .stars, .moon { opacity: 1; }
+    .sun { opacity: 0; }
+    .win { fill: #f2c25a; }
+  }
+  .procession { animation: march 70s linear -38s infinite; }
+  @keyframes march { from { transform: translateX(-900px); } to { transform: translateX(1700px); } }
+  .rider { animation: trot 0.7s ease-in-out infinite alternate; }
+  @keyframes trot { to { transform: translateY(-3px); } }
+  .leg { transform-box: fill-box; transform-origin: top center; }
+  .la { animation: stride 0.7s ease-in-out infinite alternate; }
+  .lb { animation: stride 0.7s ease-in-out infinite alternate-reverse; }
+  @keyframes stride { from { transform: rotate(-14deg); } to { transform: rotate(14deg); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+
+<rect width="1600" height="1000" fill="url(#sky)"/>
+
+<g class="sun" transform="translate(190 140)">
+  <g class="sun-rays" stroke="#b8902e" stroke-width="3">
+    <line x1="0" y1="-78" x2="0" y2="-58"/><line x1="0" y1="58" x2="0" y2="78"/><line x1="-78" y1="0" x2="-58" y2="0"/><line x1="58" y1="0" x2="78" y2="0"/>
+    <line x1="-55" y1="-55" x2="-41" y2="-41"/><line x1="41" y1="41" x2="55" y2="55"/><line x1="-55" y1="55" x2="-41" y2="41"/><line x1="41" y1="-41" x2="55" y2="-55"/>
+  </g>
+  <circle r="48" fill="#f6d36a" stroke="#3b2a1a" stroke-width="2"/>
+  <circle r="36" fill="none" stroke="#b8902e" stroke-width="1.5" stroke-dasharray="4 5"/>
+</g>
+
+<g fill="#f7f0e1" stroke="#3b2a1a" stroke-width="1.5">
+  <path class="cloud" d="M560 120 q20 -26 50 -10 q22 -30 56 -4 q34 -6 32 22 q24 10 4 26 q-30 14 -60 2 q-26 18 -56 2 q-36 6 -40 -18 q-10 -16 14 -20 Z"/>
+  <path class="cloud c2" d="M1220 90 q24 -28 56 -8 q26 -26 58 2 q30 0 26 24 q18 14 -6 24 q-32 10 -58 -2 q-30 16 -58 0 q-30 2 -30 -20 q-4 -16 12 -20 Z"/>
+</g>
+
+<g class="night"><rect width="1600" height="1000" fill="#0d1838"/></g>
+<g class="stars" fill="#f6dc8c">
+  <circle class="star" cx="300" cy="70" r="2.2"/><circle class="star" cx="480" cy="190" r="1.8"/><circle class="star" cx="700" cy="60" r="2"/>
+  <circle class="star" cx="880" cy="160" r="1.6"/><circle class="star" cx="1040" cy="80" r="2.3"/><circle class="star" cx="1400" cy="200" r="1.8"/>
+  <circle class="star" cx="1520" cy="70" r="2"/><circle class="star" cx="140" cy="250" r="1.6"/><circle class="star" cx="620" cy="260" r="1.4"/>
+</g>
+<g class="moon" transform="translate(1300 120)">
+  <path d="M0 -46 A46 46 0 1 0 0 46 A36 36 0 1 1 0 -46 Z" fill="#f6dc8c" stroke="#b8902e" stroke-width="1.5"/>
+  <polygon points="22,-6 26,4 37,4 28,11 31,22 22,15 13,22 16,11 7,4 18,4" fill="#f6dc8c"/>
+</g>
+
+<g class="flock"><use href="#bird" x="0" y="200"/><use href="#bird" x="34" y="186"/><use href="#bird" x="60" y="212"/><use href="#bird" x="92" y="196"/></g>
+
+<g stroke="#3b2a1a" stroke-width="1.6">
+  <path d="M-20 400 Q120 250 300 330 Q460 230 640 320 Q820 240 1000 310 Q1180 230 1360 300 Q1500 250 1620 320 L1620 520 L-20 520 Z" fill="#d9a3a0"/>
+  <path d="M-20 440 Q160 340 360 400 Q560 330 760 390 Q980 320 1200 380 Q1420 330 1620 390 L1620 520 L-20 520 Z" fill="#b9b0d4"/>
+</g>
+
+<use href="#cypress" x="90" y="300"/><use href="#cypress" x="1530" y="290"/><use href="#cypress" x="700" y="310"/>
+
+<g transform="translate(0 0)">
+  <use href="#minaret" x="340" y="240"/><use href="#minaret" x="500" y="240"/>
+  <rect x="352" y="360" width="140" height="110" fill="#f3ead8" stroke="#3b2a1a" stroke-width="1.5"/>
+  <rect x="372" y="330" width="100" height="30" fill="#efe3c9" stroke="#3b2a1a" stroke-width="1.5"/>
+  <path d="M372 330 A50 48 0 0 1 472 330 Z" fill="#7f95ad" stroke="#3b2a1a" stroke-width="1.5"/>
+  <line x1="422" y1="282" x2="422" y2="262" stroke="#b8902e" stroke-width="2.5"/>
+  <path d="M378 470 v-40 a14 14 0 0 1 28 0 v40 M438 470 v-40 a14 14 0 0 1 28 0 v40" fill="#4a3826" stroke="#3b2a1a" stroke-width="1.2"/>
+</g>
+
+<g>
+  <use href="#minaret" x="880" y="210"/><use href="#minaret" x="1260" y="210"/>
+  <use href="#minaret" x="925" y="250"/><use href="#minaret" x="1215" y="250"/>
+  <rect x="940" y="370" width="260" height="100" fill="#f3ead8" stroke="#3b2a1a" stroke-width="1.6"/>
+  <path d="M945 370 A52 44 0 0 1 1049 370 Z M1091 370 A52 44 0 0 1 1195 370 Z" fill="#8ea2b8" stroke="#3b2a1a" stroke-width="1.5"/>
+  <rect x="990" y="320" width="160" height="50" fill="#efe3c9" stroke="#3b2a1a" stroke-width="1.6"/>
+  <g fill="#4a3826"><rect class="win" x="1005" y="334" width="10" height="22" rx="5"/><rect class="win" x="1035" y="334" width="10" height="22" rx="5"/><rect class="win" x="1065" y="334" width="10" height="22" rx="5"/><rect class="win" x="1095" y="334" width="10" height="22" rx="5"/><rect class="win" x="1125" y="334" width="10" height="22" rx="5"/></g>
+  <path d="M990 320 A80 78 0 0 1 1150 320 Z" fill="#7f95ad" stroke="#3b2a1a" stroke-width="1.8"/>
+  <path d="M1004 300 Q1070 270 1136 300" fill="none" stroke="#5f7590" stroke-width="1.2"/>
+  <line x1="1070" y1="242" x2="1070" y2="214" stroke="#b8902e" stroke-width="3"/>
+  <path d="M1070 200 a9 9 0 1 0 0 16 a7 7 0 1 1 0 -16 Z" fill="#b8902e"/>
+  <path d="M960 470 v-50 a18 18 0 0 1 36 0 v50 M1052 470 v-60 a18 18 0 0 1 36 0 v60 M1144 470 v-50 a18 18 0 0 1 36 0 v50" fill="#4a3826" stroke="#3b2a1a" stroke-width="1.2"/>
+</g>
+
+<use href="#house" x="580" y="420"/><use href="#house" x="630" y="408"/><use href="#house" x="760" y="418"/><use href="#house" x="810" y="430"/>
+<use href="#house" x="1300" y="420"/><use href="#house" x="1360" y="410"/><use href="#house" x="1440" y="424"/><use href="#house" x="200" y="424"/><use href="#house" x="250" y="414"/>
+
+<rect x="-20" y="456" width="1640" height="14" fill="url(#merlon)"/>
+<rect x="-20" y="470" width="1640" height="40" fill="#c9a77a" stroke="#3b2a1a" stroke-width="1.6"/>
+<g fill="#c9a77a" stroke="#3b2a1a" stroke-width="1.6">
+  <rect x="140" y="440" width="44" height="70"/><rect x="760" y="440" width="44" height="70"/><rect x="1440" y="440" width="44" height="70"/>
+</g>
+
+<path d="M-20 510 L1620 510 L1620 780 L-20 780 Z" fill="#8fb36f" stroke="#3b2a1a" stroke-width="1.6"/>
+<rect x="-20" y="512" width="1640" height="266" fill="url(#flowers)"/>
+<use href="#tent" x="210" y="610"/><use href="#tent" x="390" y="640"/><use href="#tent" x="1380" y="620"/>
+<use href="#cypress" x="560" y="560"/><use href="#cypress" x="1220" y="570"/><use href="#cypress" x="40" y="600"/><use href="#cypress" x="1560" y="590"/>
+
+<g class="procession">
+  <g class="rider"><use href="#rider" x="0" y="762" style="color:#f4efe2;--k:#2a5d3a;--p:#c4352c"/></g>
+  <g class="rider" style="animation-delay:-0.3s"><use href="#rider" x="-170" y="758" style="color:#8a5a34;--k:#c4352c;--p:#2a5d3a"/></g>
+  <g class="rider" style="animation-delay:-0.5s"><use href="#rider" x="-340" y="764" style="color:#3b2a1a;--k:#1f4e8c;--p:#d4a84a"/></g>
+  <g class="rider" style="animation-delay:-0.15s"><use href="#rider" x="-510" y="760" style="color:#b9a07a;--k:#7a3b6e;--p:#c4352c"/></g>
+  <g class="rider" style="animation-delay:-0.4s"><use href="#rider" x="-680" y="762" style="color:#f4efe2;--k:#a8740f;--p:#1f4e8c"/></g>
+</g>
+
+<path d="M-20 780 Q200 764 400 780 T800 780 T1200 780 T1620 780 L1620 1020 L-20 1020 Z" fill="url(#sea)" stroke="#3b2a1a" stroke-width="1.6"/>
+<g class="waves"><rect x="-60" y="800" width="1720" height="220" fill="url(#waves)"/></g>
+<g class="boat1"><use href="#galley" x="330" y="850"/></g>
+<g class="boat2"><use href="#galley" x="1260" y="880"/></g>
+</svg>
+
+<defs>
+  <g id="corner">
+    <path d="M0 0 H150 Q112 40 96 96 Q40 112 0 150 Z" fill="#d4a84a" stroke="#3b2a1a" stroke-width="1.5"/>
+    <path d="M0 0 H112 Q84 30 72 72 Q30 84 0 112 Z" fill="#1d3a6e" stroke="#d4a84a" stroke-width="2"/>
+    <path d="M44 44 m-26 0 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0" fill="#8a2a22" stroke="#d4a84a" stroke-width="2.5"/>
+    <path d="M44 26 Q54 44 44 62 Q34 44 44 26 Z M26 44 Q44 54 62 44 Q44 34 26 44 Z" fill="#d4a84a"/>
+    <circle cx="44" cy="44" r="4" fill="#f7f2e6"/>
+    <path d="M88 16 q10 8 0 18 q-10 -10 0 -18 Z M16 88 q8 10 18 0 q-10 -10 -18 0 Z" fill="#d4a84a"/>
+    <path d="M118 8 q-8 14 -24 18 M8 118 q14 -8 18 -24" fill="none" stroke="#f7f2e6" stroke-width="1.5"/>
+  </g>
+  <g id="medallion">
+    <path d="M-90 0 Q-60 0 -40 34 Q0 70 40 34 Q60 0 90 0 Z" fill="#d4a84a" stroke="#3b2a1a" stroke-width="1.5"/>
+    <path d="M-62 0 Q-44 0 -30 22 Q0 48 30 22 Q44 0 62 0 Z" fill="#1d3a6e" stroke="#d4a84a" stroke-width="2"/>
+    <path d="M0 6 Q14 18 0 34 Q-14 18 0 6 Z" fill="#8a2a22" stroke="#d4a84a" stroke-width="1.5"/>
+  </g>
+</defs>
+<g fill="none">
+  <rect width="100%" height="100%" stroke="#3b2a1a" stroke-width="88"/>
+  <rect width="100%" height="100%" stroke="#d4a84a" stroke-width="84"/>
+  <rect width="100%" height="100%" stroke="#8a2a22" stroke-width="76"/>
+  <rect width="100%" height="100%" stroke="#d4a84a" stroke-width="36"/>
+  <rect width="100%" height="100%" stroke="#1d3a6e" stroke-width="30"/>
+  <rect class="beads" x="27" y="27" width="100%" height="100%" style="width:calc(100% - 54px);height:calc(100% - 54px)" stroke="#e7c770" stroke-width="3.5" stroke-dasharray="0.1 13" stroke-linecap="round"/>
+</g>
+<svg overflow="visible"><use href="#corner"/></svg>
+<svg x="100%" overflow="visible"><use href="#corner" transform="scale(-1 1)"/></svg>
+<svg y="100%" overflow="visible"><use href="#corner" transform="scale(1 -1)"/></svg>
+<svg x="100%" y="100%" overflow="visible"><use href="#corner" transform="scale(-1 -1)"/></svg>
+<svg x="50%" overflow="visible"><use href="#medallion"/></svg>
+<svg x="50%" y="100%" overflow="visible"><use href="#medallion" transform="scale(1 -1)"/></svg>
+</svg>

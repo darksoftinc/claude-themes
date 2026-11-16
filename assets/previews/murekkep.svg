@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" style="--paper:#efebe2;--ink:#1d1c1a;--mist:#efebe2;--seal:#b5302a">
+<defs>
+  <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--ink);stop-opacity:0.28"/><stop offset="0.7" style="stop-color:var(--ink);stop-opacity:0.04"/><stop offset="1" style="stop-color:var(--ink);stop-opacity:0"/></linearGradient>
+  <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--ink);stop-opacity:0.5"/><stop offset="0.6" style="stop-color:var(--ink);stop-opacity:0.1"/><stop offset="1" style="stop-color:var(--ink);stop-opacity:0"/></linearGradient>
+  <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--ink);stop-opacity:0.82"/><stop offset="0.55" style="stop-color:var(--ink);stop-opacity:0.22"/><stop offset="1" style="stop-color:var(--ink);stop-opacity:0"/></linearGradient>
+  <filter id="soft" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+  <filter id="edge"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="14"/></filter>
+  <pattern id="grain" width="160" height="160" patternUnits="userSpaceOnUse"><g style="fill:var(--ink)" fill-opacity="0.05"><circle cx="12" cy="30" r="0.8"/><circle cx="80" cy="12" r="0.6"/><circle cx="140" cy="90" r="0.9"/><circle cx="50" cy="120" r="0.7"/><circle cx="110" cy="150" r="0.6"/></g></pattern>
+</defs>
+<style>
+  @media (prefers-color-scheme: dark) { svg { --paper:#141416 !important; --ink:#e9e4da !important; --mist:#141416 !important; --seal:#c9483e !important; } }
+  .mist { animation: mist 40s ease-in-out infinite alternate; }
+  .mist.b { animation-duration: 55s; animation-direction: alternate-reverse; }
+  @keyframes mist { from { transform: translateX(-120px); } to { transform: translateX(140px); } }
+  .bird { animation: fly 60s linear infinite; }
+  @keyframes fly { from { transform: translate(-150px, 60px); } to { transform: translate(1750px, -40px); } }
+  .wing { transform-box: fill-box; transform-origin: center; animation: flap 1.6s ease-in-out infinite alternate; }
+  @keyframes flap { from { transform: scaleY(1); } to { transform: scaleY(-0.6); } }
+  .sun { animation: breathe 12s ease-in-out infinite alternate; }
+  @keyframes breathe { from { opacity: 0.55; } to { opacity: 0.8; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1600" height="1000" style="fill:var(--paper)"/>
+<circle class="sun" cx="1160" cy="250" r="78" style="fill:var(--seal)" fill-opacity="0.75"/>
+<g filter="url(#edge)">
+  <path d="M-40 560 C120 470 220 380 330 330 C400 300 450 340 520 300 C600 250 660 200 740 240 C820 280 860 360 960 330 C1060 300 1120 220 1230 260 C1340 300 1420 380 1640 360 L1640 1000 L-40 1000 Z" fill="url(#m1)"/>
+  <path d="M-40 680 C80 620 160 520 260 470 C340 430 400 470 470 440 C560 400 600 330 690 360 C770 390 800 470 880 500 C960 530 1010 470 1090 430 C1180 385 1260 420 1330 480 C1420 550 1520 560 1640 540 L1640 1000 L-40 1000 Z" fill="url(#m2)"/>
+</g>
+<g class="mist" filter="url(#soft)" style="fill:var(--mist)" fill-opacity="0.9"><ellipse cx="400" cy="600" rx="420" ry="40"/><ellipse cx="1200" cy="640" rx="380" ry="36"/></g>
+<g filter="url(#edge)">
+  <path d="M-40 820 C60 760 140 640 230 600 C300 570 340 620 390 650 C460 690 520 700 600 760 C700 830 800 860 900 880 L-40 1000 Z" fill="url(#m3)"/>
+  <path d="M1640 760 C1560 720 1500 640 1420 610 C1350 585 1310 640 1250 680 C1180 725 1120 760 1040 820 C960 880 880 920 800 960 L1640 1000 Z" fill="url(#m3)"/>
+</g>
+<g class="mist b" filter="url(#soft)" style="fill:var(--mist)" fill-opacity="0.85"><ellipse cx="800" cy="860" rx="520" ry="46"/></g>
+<g style="stroke:var(--ink)" stroke-linecap="round" fill="none" stroke-opacity="0.8">
+  <path d="M180 640 q-6 -40 4 -80 M188 600 q14 -10 26 -8 M186 580 q-14 -10 -22 -4" stroke-width="3"/>
+  <path d="M1420 640 q4 -50 -6 -96 M1416 590 q-16 -10 -30 -6 M1418 570 q14 -12 24 -8" stroke-width="3"/>
+</g>
+<g class="bird" style="stroke:var(--ink)" fill="none" stroke-width="2.6" stroke-linecap="round">
+  <path class="wing" d="M200 220 q16 -14 30 0 q14 -14 30 0"/>
+</g>
+<rect width="1600" height="1000" fill="url(#grain)"/>
+<g transform="translate(1470 860)"><rect width="46" height="58" rx="4" style="fill:var(--seal)" fill-opacity="0.85"/><path d="M12 14 h22 M23 14 v30 M12 30 h22 M14 44 h18" stroke="#f5efe4" stroke-width="3" stroke-linecap="round" fill="none"/></g>
+</svg>

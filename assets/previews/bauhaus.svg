@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" style="--bg:#efe8da;--k:#151515;--r:#d0342c;--b:#1f4fbf;--y:#f2c230;--c:#f8f4ec">
+<style>
+  @media (prefers-color-scheme: dark) { svg { --bg:#151517 !important; --k:#ece6da !important; --c:#202024 !important; } }
+  .rot { transform-box: fill-box; transform-origin: center; animation: rot 48s linear infinite; }
+  .rot.rev { animation-direction: reverse; animation-duration: 32s; }
+  @keyframes rot { to { transform: rotate(360deg); } }
+  .flip { transform-box: fill-box; transform-origin: center; animation: flip 10s ease-in-out infinite; }
+  .flip.f2 { animation-delay: -2.5s; } .flip.f3 { animation-delay: -5s; } .flip.f4 { animation-delay: -7.5s; }
+  @keyframes flip { 0%, 40% { transform: rotate(0deg); } 50%, 90% { transform: rotate(180deg); } 100% { transform: rotate(360deg); } }
+  .slide { animation: slide 14s cubic-bezier(.7,0,.3,1) infinite alternate; }
+  @keyframes slide { from { transform: translateX(0); } to { transform: translateX(260px); } }
+  .rise { animation: rise 11s cubic-bezier(.7,0,.3,1) infinite alternate; }
+  @keyframes rise { from { transform: translateY(0); } to { transform: translateY(-180px); } }
+  .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 7s ease-in-out infinite alternate; }
+  @keyframes pulse { from { transform: scale(0.86); } to { transform: scale(1.04); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1600" height="1000" style="fill:var(--bg)"/>
+<g style="stroke:var(--k)" stroke-width="2" opacity="0.18"><path d="M0 250 H1600 M0 750 H1600 M400 0 V1000 M1200 0 V1000"/></g>
+<g class="pulse"><circle cx="1220" cy="300" r="230" style="fill:var(--y)"/></g>
+<g class="rot"><path d="M1220 300 m-150 0 a150 150 0 0 1 300 0 Z" style="fill:var(--r)"/></g>
+<circle cx="1220" cy="300" r="40" style="fill:var(--k)"/>
+<g class="slide"><rect x="120" y="120" width="320" height="120" style="fill:var(--b)"/></g>
+<rect x="120" y="260" width="20" height="420" style="fill:var(--k)"/>
+<g transform="translate(220 600)">
+  <g class="flip"><path d="M0 0 a60 60 0 0 1 120 0 Z" style="fill:var(--r)"/></g>
+  <g transform="translate(130 0)"><g class="flip f2"><path d="M0 0 a60 60 0 0 1 120 0 Z" style="fill:var(--b)"/></g></g>
+  <g transform="translate(260 0)"><g class="flip f3"><path d="M0 0 a60 60 0 0 1 120 0 Z" style="fill:var(--y)"/></g></g>
+  <g transform="translate(390 0)"><g class="flip f4"><path d="M0 0 a60 60 0 0 1 120 0 Z" style="fill:var(--k)"/></g></g>
+</g>
+<g class="rise"><rect x="1460" y="640" width="80" height="300" style="fill:var(--r)"/></g>
+<g class="rot rev" style="transform-origin: 300px 860px"><path d="M300 860 L300 720 A140 140 0 0 1 440 860 Z" style="fill:var(--b)"/></g>
+<polygon points="900,940 1080,640 1260,940" style="fill:var(--c);stroke:var(--k)" stroke-width="6"/>
+<circle cx="1080" cy="830" r="54" style="fill:var(--r)"/>
+<g style="stroke:var(--k)" stroke-width="10" stroke-linecap="square"><path d="M700 80 L960 80 M820 80 L820 200"/></g>
+<g style="fill:var(--k)"><circle cx="760" cy="900" r="10"/><circle cx="800" cy="900" r="10"/><circle cx="840" cy="900" r="10"/></g>
+</svg>
