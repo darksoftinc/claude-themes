@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <radialGradient id="paper" cx="0.5" cy="0.5" r="0.75"><stop offset="0" stop-color="#f3ecdb"/><stop offset="0.75" stop-color="#e8dcc2"/><stop offset="1" stop-color="#d6c5a2"/></radialGradient>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#2a2520" stroke-width="1.1"/></pattern>
+  <pattern id="spots" width="300" height="300" patternUnits="userSpaceOnUse"><g fill="#8a6a3a" fill-opacity="0.06"><circle cx="40" cy="60" r="18"/><circle cx="210" cy="190" r="26"/><circle cx="120" cy="260" r="10"/></g></pattern>
+  <path id="g1" d="M-10.0 -103.5L-6.7 -119.8L6.7 -119.8L10.0 -103.5L26.0 -100.7L34.7 -114.9L47.3 -110.3L44.8 -93.9L58.9 -85.7L71.9 -96.1L82.1 -87.5L74.2 -72.9L84.7 -60.4L100.4 -65.7L107.1 -54.1L94.6 -43.1L100.2 -27.8L116.8 -27.4L119.2 -14.2L103.7 -8.2L103.7 8.2L119.2 14.2L116.8 27.4L100.2 27.8L94.6 43.1L107.1 54.1L100.4 65.7L84.7 60.4L74.2 72.9L82.1 87.5L71.9 96.1L58.9 85.7L44.8 93.9L47.3 110.3L34.7 114.9L26.0 100.7L10.0 103.5L6.7 119.8L-6.7 119.8L-10.0 103.5L-26.0 100.7L-34.7 114.9L-47.3 110.3L-44.8 93.9L-58.9 85.7L-71.9 96.1L-82.1 87.5L-74.2 72.9L-84.7 60.4L-100.4 65.7L-107.1 54.1L-94.6 43.1L-100.2 27.8L-116.8 27.4L-119.2 14.2L-103.7 8.2L-103.7 -8.2L-119.2 -14.2L-116.8 -27.4L-100.2 -27.8L-94.6 -43.1L-107.1 -54.1L-100.4 -65.7L-84.7 -60.4L-74.2 -72.9L-82.1 -87.5L-71.9 -96.1L-58.9 -85.7L-44.8 -93.9L-47.3 -110.3L-34.7 -114.9L-26.0 -100.7Z"/>
+  <path id="g2" d="M-7.7 -53.4L-5.5 -65.8L5.5 -65.8L7.7 -53.4L20.0 -50.2L28.1 -59.7L37.7 -54.2L33.4 -42.4L42.4 -33.4L54.2 -37.7L59.7 -28.1L50.2 -20.0L53.4 -7.7L65.8 -5.5L65.8 5.5L53.4 7.7L50.2 20.0L59.7 28.1L54.2 37.7L42.4 33.4L33.4 42.4L37.7 54.2L28.1 59.7L20.0 50.2L7.7 53.4L5.5 65.8L-5.5 65.8L-7.7 53.4L-20.0 50.2L-28.1 59.7L-37.7 54.2L-33.4 42.4L-42.4 33.4L-54.2 37.7L-59.7 28.1L-50.2 20.0L-53.4 7.7L-65.8 5.5L-65.8 -5.5L-53.4 -7.7L-50.2 -20.0L-59.7 -28.1L-54.2 -37.7L-42.4 -33.4L-33.4 -42.4L-37.7 -54.2L-28.1 -59.7L-20.0 -50.2Z"/>
+  <path id="g3" d="M-6.4 -36.4L-4.6 -45.8L4.6 -45.8L6.4 -36.4L16.3 -33.2L23.2 -39.7L30.6 -34.3L26.6 -25.7L32.7 -17.3L42.1 -18.5L45.0 -9.8L36.6 -5.2L36.6 5.2L45.0 9.8L42.1 18.5L32.7 17.3L26.6 25.7L30.6 34.3L23.2 39.7L16.3 33.2L6.4 36.4L4.6 45.8L-4.6 45.8L-6.4 36.4L-16.3 33.2L-23.2 39.7L-30.6 34.3L-26.6 25.7L-32.7 17.3L-42.1 18.5L-45.0 9.8L-36.6 5.2L-36.6 -5.2L-45.0 -9.8L-42.1 -18.5L-32.7 -17.3L-26.6 -25.7L-30.6 -34.3L-23.2 -39.7L-16.3 -33.2Z"/>
+  <path id="esc" d="M-5.1 -43.7L-3.9 -57.9L3.9 -57.9L5.1 -43.7L13.2 -42.0L20.0 -54.4L27.1 -51.3L22.4 -37.9L29.1 -33.0L40.4 -41.6L45.6 -35.8L35.9 -25.5L40.0 -18.3L53.8 -21.6L56.2 -14.2L43.1 -8.7L44.0 -0.5L58.0 2.2L57.1 9.9L42.9 9.6L40.4 17.5L52.1 25.6L48.2 32.3L35.3 26.2L29.8 32.4L37.2 44.5L30.9 49.1L21.6 38.3L14.0 41.7L15.8 55.8L8.2 57.4L4.1 43.8L-4.1 43.8L-8.2 57.4L-15.8 55.8L-14.0 41.7L-21.6 38.3L-30.9 49.1L-37.2 44.5L-29.8 32.4L-35.3 26.2L-48.2 32.3L-52.1 25.6L-40.4 17.5L-42.9 9.6L-57.1 9.9L-58.0 2.2L-44.0 -0.5L-43.1 -8.7L-56.2 -14.2L-53.8 -21.6L-40.0 -18.3L-35.9 -25.5L-45.6 -35.8L-40.4 -41.6L-29.1 -33.0L-22.4 -37.9L-27.1 -51.3L-20.0 -54.4L-13.2 -42.0Z"/>
+</defs>
+<style>
+  .r1 { transform-box: view-box; animation: tick 60s steps(60) infinite; }
+  .r2 { transform-box: view-box; animation: tick 20s steps(60) infinite reverse; }
+  .r3 { transform-box: view-box; animation: tick 8s steps(60) infinite; }
+  .r4 { transform-box: view-box; animation: tick 15s steps(15) infinite reverse; }
+  @keyframes tick { to { transform: rotate(360deg); } }
+  .bal { transform-box: view-box; animation: bal 1s ease-in-out infinite alternate; }
+  @keyframes bal { from { transform: rotate(-150deg); } to { transform: rotate(150deg); } }
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 18s ease-in-out infinite; }
+  .d1 { animation-delay: 0.7s; } .d2 { animation-delay: 1.4s; } .d3 { animation-delay: 2.2s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 28%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  text { font-family: "Times New Roman", Georgia, serif; fill: #2a2520; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw { stroke-dashoffset: 0; } }
+</style>
+<rect width="1600" height="1000" fill="url(#paper)"/>
+<rect width="1600" height="1000" fill="url(#spots)"/>
+<rect x="60" y="60" width="1480" height="880" fill="none" stroke="#2a2520" stroke-width="3"/>
+<rect x="72" y="72" width="1456" height="856" fill="none" stroke="#2a2520" stroke-width="1"/>
+<g font-size="22" text-anchor="middle"><text x="800" y="118" letter-spacing="3">CEP SAATİ MEKANİZMASI</text></g>
+<g font-size="15" font-style="italic"><text x="110" y="118">Pat. No. 1.923.552</text><text x="1490" y="118" text-anchor="end">Sayfa 1 / 3</text></g>
+<g transform="translate(1110 520)" fill="none" stroke="#2a2520">
+  <circle r="300" stroke-width="3"/><circle r="286" stroke-width="1.2"/>
+  <circle r="300" fill="url(#hatch)" fill-opacity="0.18" stroke="none"/>
+  <circle r="276" fill="#efe6d1" stroke="none"/>
+  <path d="M-30 -300 V-340 H30 V-300 M-18 -340 V-372 H18 V-340" stroke-width="2.5" fill="#efe6d1"/>
+  <circle cy="-390" r="26" stroke-width="2.5"/>
+  <g transform="translate(-40 -20)"><g class="r1"><use href="#g1" stroke-width="2" fill="#efe6d1"/><circle r="70" stroke-width="1.4"/><path d="M0 -70 V70 M-70 0 H70 M-50 -50 L50 50 M-50 50 L50 -50" stroke-width="1.2"/><circle r="12" fill="#2a2520"/></g></g>
+  <g transform="translate(130 -120)"><g class="r2"><use href="#g2" stroke-width="2" fill="#efe6d1"/><circle r="22" fill="url(#hatch)" stroke-width="1.4"/><circle r="7" fill="#2a2520"/></g></g>
+  <g transform="translate(150 60)"><g class="r3"><use href="#g3" stroke-width="2" fill="#efe6d1"/><circle r="6" fill="#2a2520"/></g></g>
+  <g transform="translate(-60 190)"><g class="r4"><use href="#esc" stroke-width="2" fill="#efe6d1"/><circle r="6" fill="#2a2520"/></g></g>
+  <g transform="translate(-200 120)"><g class="bal"><circle r="64" stroke-width="2.5"/><path d="M-64 0 H64 M0 -64 V64" stroke-width="2"/><circle r="5" fill="#2a2520"/></g><path d="M0 0 m-20 0 a20 20 0 1 1 40 0 a16 16 0 1 1 -32 0 a12 12 0 1 1 24 0" stroke-width="1"/></g>
+  <path d="M-110 210 L-20 150 L10 175" stroke-width="3"/><circle cx="-110" cy="210" r="6" fill="#2a2520"/>
+  <g stroke-width="1.2"><circle cx="-180" cy="-190" r="10"/><circle cx="210" cy="-10" r="10"/><circle cx="60" cy="230" r="10"/><circle cx="-250" cy="-40" r="10"/></g>
+</g>
+<g fill="none" stroke="#2a2520" stroke-width="1.2">
+  <path class="draw" pathLength="1" d="M1070 500 L760 300"/><path class="draw d1" pathLength="1" d="M1240 400 L1460 230"/>
+  <path class="draw d2" pathLength="1" d="M1260 580 L1470 640"/><path class="draw d3" pathLength="1" d="M910 640 L700 760"/>
+  <path class="draw d1" pathLength="1" d="M1050 710 L860 860"/><path class="draw d2" pathLength="1" d="M1110 120 L1110 160" />
+</g>
+<g font-size="20" font-style="italic"><text x="736" y="296">12</text><text x="1466" y="226">14</text><text x="1476" y="650">16</text><text x="672" y="776">18</text><text x="834" y="878">20</text></g>
+<text x="1060" y="880" font-size="26" font-style="italic">Fig. 1.</text>
+<g transform="translate(140 300)" fill="none" stroke="#2a2520">
+  <g transform="translate(160 140)"><g class="r3"><use href="#g3" transform="scale(2.4)" stroke-width="0.9" fill="#efe6d1"/><circle r="16" fill="url(#hatch)" stroke-width="1.4"/></g></g>
+  <path class="draw" pathLength="1" d="M160 260 V340 M60 340 H260 M60 330 v20 M260 330 v20" stroke-width="1"/>
+</g>
+<g font-size="17" font-style="italic"><text x="270" y="660" text-anchor="middle">Fig. 2. — Ara çark, büyütülmüş.</text></g>
+<g font-size="14" opacity="0.85"><text x="110" y="890">Tanıklar: ............................</text><text x="110" y="914">Mucit: ............................</text></g>
+</svg>

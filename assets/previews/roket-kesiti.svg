@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <radialGradient id="bg" cx="0.7" cy="0.4" r="0.9"><stop offset="0" stop-color="#1b1f25"/><stop offset="1" stop-color="#0a0b0d"/></radialGradient>
+  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#e8e3d8" stroke-opacity="0.05"/></pattern>
+  <pattern id="G" width="200" height="200" patternUnits="userSpaceOnUse"><path d="M200 0 H0 V200" fill="none" stroke="#e8e3d8" stroke-opacity="0.1"/></pattern>
+  <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#e8e3d8" stroke-opacity="0.35" stroke-width="1"/></pattern>
+</defs>
+<style>
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 20s ease-in-out infinite; }
+  .d1 { animation-delay: 0.9s; } .d2 { animation-delay: 1.8s; } .d3 { animation-delay: 2.7s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 32%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  .traj { stroke-dasharray: 1; stroke-dashoffset: 1; animation: traj 14s cubic-bezier(.4,0,.2,1) infinite; }
+  @keyframes traj { 0% { stroke-dashoffset: 1; } 70%, 92% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; opacity: 0; } }
+  .craft { offset-path: path('M180 860 C420 840 640 700 820 500 S1080 170 1200 130'); offset-rotate: auto; animation: fly 14s cubic-bezier(.4,0,.2,1) infinite; }
+  @keyframes fly { 0% { offset-distance: 0%; opacity: 1; } 70% { offset-distance: 100%; opacity: 1; } 92% { offset-distance: 100%; opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+  .flame { transform-box: fill-box; transform-origin: top center; animation: flame 0.18s ease-in-out infinite alternate; }
+  @keyframes flame { from { transform: scaleY(0.8); } to { transform: scaleY(1.15); } }
+  .blink { animation: blink 1s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0.2; } }
+  .orbit { transform-origin: 1300px 230px; animation: spin 30s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  text { font-family: ui-monospace, Consolas, "Courier New", monospace; fill: #e8e3d8; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw, .traj { stroke-dashoffset: 0; } }
+</style>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<rect width="1600" height="1000" fill="url(#G)"/>
+<rect x="40" y="40" width="1520" height="920" fill="none" stroke="#e8e3d8" stroke-opacity="0.45" stroke-width="2"/>
+<g transform="translate(300 120)" fill="none" stroke="#e8e3d8" stroke-width="1.8">
+  <path class="draw" pathLength="1" d="M60 0 C90 40 100 90 100 140 L100 640 L130 700 L130 760 L-10 760 L-10 700 L20 640 L20 140 C20 90 30 40 60 0 Z"/>
+  <path class="draw d1" pathLength="1" d="M20 140 H100 M20 380 H100 M20 400 H100 M20 640 H100"/>
+  <rect class="draw d2" pathLength="1" x="32" y="160" width="56" height="90" rx="26"/>
+  <rect class="draw d2" pathLength="1" x="32" y="262" width="56" height="104" rx="26"/>
+  <rect class="draw d3" pathLength="1" x="32" y="414" width="56" height="100" rx="26"/>
+  <rect class="draw d3" pathLength="1" x="32" y="526" width="56" height="100" rx="26"/>
+  <rect x="32" y="414" width="56" height="100" rx="26" fill="url(#hatch)" stroke="none"/>
+  <path class="draw d1" pathLength="1" d="M40 760 L30 800 H90 L80 760"/>
+  <path class="flame" d="M38 802 Q60 880 82 802 Z" fill="#ff8a3d" fill-opacity="0.85" stroke="none"/>
+  <path d="M60 50 V120" stroke-dasharray="6 6" stroke-opacity="0.6"/>
+</g>
+<g stroke="#ff8a3d" stroke-width="1.4" fill="none">
+  <path class="draw d1" pathLength="1" d="M410 300 H520 M410 418 H560 M410 470 H520 M410 590 H560 M410 900 H520"/>
+</g>
+<g font-size="15">
+  <text x="530" y="305">YÜK BÖLMESİ</text><text x="570" y="423">2. KADEME · LOX</text><text x="530" y="475">AYRILMA HALKASI</text>
+  <text x="570" y="595">1. KADEME · RP-1</text><text x="530" y="905">MOTOR · 9 × 845 kN</text>
+</g>
+<g fill="none" stroke="#e8e3d8" stroke-width="1.2" stroke-opacity="0.8">
+  <path class="draw d2" pathLength="1" d="M240 120 V880 M230 120 h20 M230 880 h20 M234 126 l12 -12 M234 886 l12 -12"/>
+</g>
+<text x="200" y="510" font-size="14" transform="rotate(-90 200 510)">70,0 m</text>
+<path class="traj" pathLength="1" d="M180 860 C420 840 640 700 820 500 S1080 170 1200 130" fill="none" stroke="#ff8a3d" stroke-width="2.4" stroke-dasharray="1"/>
+<path d="M180 860 C420 840 640 700 820 500 S1080 170 1200 130" fill="none" stroke="#e8e3d8" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="4 8"/>
+<g class="craft"><path d="M-14 -4 L10 -4 L18 0 L10 4 L-14 4 Z" fill="#e8e3d8"/><path class="flame" d="M-14 -3 L-30 0 L-14 3 Z" fill="#ff8a3d"/></g>
+<g fill="#ff8a3d"><circle cx="560" cy="770" r="5"/><circle cx="900" cy="410" r="5"/><circle cx="1120" cy="170" r="5"/></g>
+<g font-size="13" opacity="0.85"><text x="572" y="790">MAX-Q · T+01:12</text><text x="912" y="430">MECO · T+02:34</text><text x="1060" y="200">SECO · T+08:47</text></g>
+<g fill="none" stroke="#e8e3d8" stroke-opacity="0.35" stroke-width="1.2"><ellipse cx="1300" cy="230" rx="170" ry="60"/><circle cx="1300" cy="230" r="34" stroke-opacity="0.7"/></g>
+<g class="orbit"><circle cx="1470" cy="230" r="5" fill="#ff8a3d"/></g>
+<g transform="translate(1160 790)" fill="none" stroke="#e8e3d8" stroke-opacity="0.6" stroke-width="1.4"><rect width="380" height="130"/><path d="M0 44 H380 M0 88 H380 M190 44 V130"/></g>
+<g font-size="14">
+  <text x="1176" y="818">PROJE: ARGE-7 FIRLATMA ARACI</text>
+  <text x="1176" y="862">ÖLÇEK 1:250</text><text x="1366" y="862">PAFTA 03/12</text>
+  <text x="1176" y="906">DURUM: UÇUŞTA</text><text x="1366" y="906" class="blink" fill="#ff8a3d">● T+00:42</text>
+</g>
+</svg>

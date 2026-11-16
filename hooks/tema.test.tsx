@@ -62,3 +62,27 @@ test('the new themes are reachable by their Turkish names', async ($, on) => {
     expect(scenes.at(-1)).toBe(id)
   }
 })
+
+test('the blueprint-style themes are reachable', async ($, on) => {
+  const scenes: string[] = []
+
+  on('command.register', () => ({ value: { command: 'tema' } }))
+  on('store.get', () => ({ value: 'kapadokya' }))
+  on('store.set', () => ({ value: undefined }))
+  on('theme.set', (_, e) => {
+    const backdrop = e.backdrop
+
+    if (backdrop !== undefined && 'scene' in backdrop && typeof backdrop.scene === 'string') {
+      scenes.push(backdrop.scene)
+    }
+
+    return { value: { isDrawn: true, requestId: 't' } }
+  })
+  on('session.start', (_, e) => ({ cwd: e.cwd }))
+  await $.session.start({ cwd: '/', surface: 'desktop', isInteractive: true })
+
+  for (const [query, id] of [['mimari', 'mimari-plan'], ['Devre Kartı', 'devre-karti'], ['patent', 'patent'], ['roket', 'roket-kesiti'], ['defter', 'defter'], ['Mühendislik', 'defter']] as const) {
+    await $.command.run({ command: 'tema', args: query } as CommandRunInput)
+    expect(scenes.at(-1)).toBe(id)
+  }
+})

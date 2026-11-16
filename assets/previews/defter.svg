@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" style="--paper:#eef3ea;--grid:#7fb08c;--pencil:#3f4440;--pen:#2a5db0;--red:#c0392b">
+<defs>
+  <pattern id="g1" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0 H0 V20" fill="none" style="stroke:var(--grid)" stroke-opacity="0.22"/></pattern>
+  <pattern id="g2" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M100 0 H0 V100" fill="none" style="stroke:var(--grid)" stroke-opacity="0.45"/></pattern>
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="2"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" style="fill:var(--pen)"/></marker>
+</defs>
+<style>
+  @media (prefers-color-scheme: dark) { svg { --paper:#101814 !important; --grid:#5f9a74 !important; --pencil:#d5dbd6 !important; --pen:#8ab8ff !important; --red:#ff7b6b !important; } }
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 22s ease-in-out infinite; }
+  .d1 { animation-delay: 0.7s; } .d2 { animation-delay: 1.4s; } .d3 { animation-delay: 2.2s; } .d4 { animation-delay: 2.9s; } .d5 { animation-delay: 3.6s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 30%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  .write { animation: write 22s ease-in-out infinite; }
+  .w1 { animation-delay: 1.2s; } .w2 { animation-delay: 2.4s; } .w3 { animation-delay: 3.6s; }
+  @keyframes write { 0%, 18% { opacity: 0; } 30%, 88% { opacity: 1; } 100% { opacity: 0; } }
+  .push { animation: push 3s ease-in-out infinite alternate; }
+  @keyframes push { from { transform: translateY(-6px); } to { transform: translateY(4px); } }
+  .pencil { animation: pencil 22s ease-in-out infinite; }
+  @keyframes pencil { 0% { transform: translate(0, 0) rotate(0deg); } 25% { transform: translate(-380px, 60px) rotate(-6deg); } 50% { transform: translate(-120px, 180px) rotate(4deg); } 75% { transform: translate(-460px, -40px) rotate(-2deg); } 100% { transform: translate(0, 0) rotate(0deg); } }
+  text { font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw { stroke-dashoffset: 0; } .write { opacity: 1; } }
+</style>
+<rect width="1600" height="1000" style="fill:var(--paper)"/>
+<rect width="1600" height="1000" fill="url(#g1)"/>
+<rect width="1600" height="1000" fill="url(#g2)"/>
+<line x1="120" y1="0" x2="120" y2="1000" style="stroke:var(--red)" stroke-opacity="0.55" stroke-width="2"/>
+<g fill="none" style="stroke:var(--pencil)" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
+  <path class="draw" pathLength="1" d="M800 620 H1460" stroke-width="3"/>
+  <path class="draw d1" pathLength="1" d="M800 620 L910 460 L1020 620 L1130 460 L1240 620 L1350 460 L1460 620" stroke-width="2.4"/>
+  <path class="draw d2" pathLength="1" d="M910 460 H1350" stroke-width="2.4"/>
+  <path class="draw d3" pathLength="1" d="M780 620 l20 0 l-10 26 Z M770 652 h40 M1440 620 h40 l-20 26 Z M1450 656 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M1466 656 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M1440 668 h40" stroke-width="2"/>
+  <g stroke-width="1.6"><path class="draw d4" pathLength="1" d="M800 700 H1460 M800 690 v20 M1130 690 v20 M1460 690 v20"/></g>
+</g>
+<g fill="none" style="stroke:var(--pen)" stroke-width="2.6" marker-end="url(#arrow)">
+  <g class="push"><path d="M1130 340 V440"/><path d="M910 360 V440" stroke-width="2"/><path d="M1350 360 V440" stroke-width="2"/></g>
+  <path class="draw d3" pathLength="1" d="M800 760 V650"/><path class="draw d3" pathLength="1" d="M1460 760 V650"/>
+</g>
+<g style="fill:var(--pen)" font-size="22">
+  <text class="write" x="1144" y="360">P = 24 kN</text>
+  <text class="write w1" x="740" y="790">R<tspan font-size="14" dy="6">A</tspan><tspan dy="-6"> = 12 kN</tspan></text>
+  <text class="write w1" x="1400" y="790">R<tspan font-size="14" dy="6">B</tspan><tspan dy="-6"> = 12 kN</tspan></text>
+</g>
+<g style="fill:var(--pencil)" font-size="20">
+  <text class="write w2" x="1100" y="735">L = 12,0 m</text>
+  <text class="write w2" x="960" y="450" font-size="16">h = 3 m</text>
+</g>
+<g style="fill:var(--pencil)" font-size="24">
+  <text class="write" x="170" y="150">Kafes köprü — düğüm noktası yöntemi</text>
+  <text class="write w1" x="170" y="220">ΣF<tspan font-size="16" dy="6">y</tspan><tspan dy="-6"> = 0  →  R</tspan><tspan font-size="16" dy="6">A</tspan><tspan dy="-6"> + R</tspan><tspan font-size="16" dy="6">B</tspan><tspan dy="-6"> = P</tspan></text>
+  <text class="write w2" x="170" y="280">ΣM<tspan font-size="16" dy="6">A</tspan><tspan dy="-6"> = 0  →  R</tspan><tspan font-size="16" dy="6">B</tspan><tspan dy="-6"> · L = P · L/2</tspan></text>
+  <text class="write w3" x="170" y="340">F<tspan font-size="16" dy="6">AB</tspan><tspan dy="-6"> = R</tspan><tspan font-size="16" dy="6">A</tspan><tspan dy="-6"> / sin θ ≈ 14,4 kN</tspan></text>
+</g>
+<g class="write w3" fill="none" style="stroke:var(--red)" stroke-width="2.4"><rect x="160" y="306" width="470" height="50" rx="12" transform="rotate(-1 395 331)"/></g>
+<g fill="none" style="stroke:var(--pencil)" stroke-width="1.6" filter="url(#rough)">
+  <path class="draw d4" pathLength="1" d="M200 520 L420 520 L310 400 Z"/>
+  <path class="draw d5" pathLength="1" d="M310 400 V520 M270 520 a40 40 0 0 0 -8 -26"/>
+</g>
+<g style="fill:var(--pencil)" font-size="18"><text class="write w2" x="236" y="508">θ</text><text class="write w3" x="200" y="560">tan θ = 3 / 2 → θ ≈ 56°</text></g>
+<g class="pencil" transform="translate(1260 300)">
+  <g transform="rotate(35)"><rect x="-8" y="-150" width="16" height="130" fill="#f2c230" stroke="#3a3a3a" stroke-width="1.4"/><rect x="-8" y="-168" width="16" height="18" fill="#e58a9a" stroke="#3a3a3a" stroke-width="1.4"/><rect x="-8" y="-150" width="16" height="6" fill="#b9b9b9"/><path d="M-8 -20 L0 0 L8 -20 Z" fill="#e8c9a0" stroke="#3a3a3a" stroke-width="1.4"/><path d="M-2.5 -6 L0 0 L2.5 -6 Z" fill="#3a3a3a"/></g>
+</g>
+<g style="fill:var(--pencil)" font-size="16" opacity="0.7"><text x="1380" y="80">Sayfa 47</text><text x="1380" y="104">16.11.2026</text></g>
+</svg>

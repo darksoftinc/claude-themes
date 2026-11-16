@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" style="--paper:#efebe2;--ink:#3d3a8c;--red:#c0392b;--fill:#3d3a8c">
+<defs>
+  <pattern id="g1" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0 H0 V25" fill="none" style="stroke:var(--ink)" stroke-opacity="0.06"/></pattern>
+  <pattern id="g2" width="125" height="125" patternUnits="userSpaceOnUse"><path d="M125 0 H0 V125" fill="none" style="stroke:var(--ink)" stroke-opacity="0.13"/></pattern>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" style="stroke:var(--ink)" stroke-opacity="0.5" stroke-width="1.4"/></pattern>
+</defs>
+<style>
+  @media (prefers-color-scheme: dark) { svg { --paper:#121128 !important; --ink:#b9b6ff !important; --red:#ff7b6b !important; } }
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 20s ease-in-out infinite; }
+  .d1 { animation-delay: 0.6s; } .d2 { animation-delay: 1.5s; } .d3 { animation-delay: 2.4s; } .d4 { animation-delay: 3.3s; } .d5 { animation-delay: 4.2s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 30%, 86% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -1; } }
+  .door { transform-box: view-box; animation: door 9s ease-in-out infinite; }
+  @keyframes door { 0%, 20% { transform: rotate(0deg); } 45%, 70% { transform: rotate(-80deg); } 95%, 100% { transform: rotate(0deg); } }
+  .fade { animation: fade 20s ease-in-out infinite; }
+  @keyframes fade { 0%, 20% { opacity: 0; } 35%, 86% { opacity: 1; } 100% { opacity: 0; } }
+  .blink { animation: blink 1.2s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  text { font-family: ui-monospace, Consolas, "Courier New", monospace; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw { stroke-dashoffset: 0; } .fade { opacity: 1; } }
+</style>
+<rect width="1600" height="1000" style="fill:var(--paper)"/>
+<rect width="1600" height="1000" fill="url(#g1)"/>
+<rect width="1600" height="1000" fill="url(#g2)"/>
+<rect x="36" y="36" width="1528" height="928" fill="none" style="stroke:var(--ink)" stroke-opacity="0.5" stroke-width="2"/>
+<g fill="none" style="stroke:var(--ink)" stroke-linecap="square">
+  <path class="draw" pathLength="1" d="M880 170 H1460 V780 H880 Z" stroke-width="12"/>
+  <path class="draw d1" pathLength="1" d="M1160 170 V420 M880 420 H1060 M1120 420 H1460 M1160 560 V780 M1160 560 H1260 M1320 560 H1460" stroke-width="6"/>
+  <path class="draw d2" pathLength="1" d="M960 170 H1080 M1260 170 H1380 M1460 250 V350 M880 560 V680" stroke-width="3" stroke-opacity="0.9"/>
+  <path class="draw d2" pathLength="1" d="M960 163 H1080 M960 177 H1080 M1260 163 H1380 M1260 177 H1380" stroke-width="1.2"/>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="2">
+  <g transform="translate(1060 420)"><g class="door"><path d="M0 0 H60" stroke-width="4"/></g><path d="M60 0 A60 60 0 0 0 10.4 -59" stroke-dasharray="5 5" stroke-opacity="0.6"/></g>
+  <g transform="translate(1260 560)"><g class="door" style="animation-delay:-4s"><path d="M0 0 H60" stroke-width="4"/></g><path d="M60 0 A60 60 0 0 0 10.4 -59" stroke-dasharray="5 5" stroke-opacity="0.6"/></g>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="1.6">
+  <rect class="draw d3" pathLength="1" x="940" y="230" width="150" height="80" rx="10"/>
+  <circle class="draw d3" pathLength="1" cx="1030" cy="355" r="34"/>
+  <rect class="draw d4" pathLength="1" x="1250" y="210" width="160" height="190" rx="4"/>
+  <path class="draw d4" pathLength="1" d="M1250 250 H1410 M1275 225 h40 v18 h-40 Z M1345 225 h40 v18 h-40 Z"/>
+  <path class="draw d5" pathLength="1" d="M900 600 H1120 V640 H900 Z M920 600 v40 M1100 600 v40"/>
+  <rect class="draw d5" pathLength="1" x="1200" y="600" width="60" height="140" rx="26"/>
+  <circle class="draw d5" pathLength="1" cx="1410" cy="610" r="22"/>
+</g>
+<g class="fade" style="fill:var(--ink)" font-size="15">
+  <text x="960" y="390">SALON · 32,4 m²</text><text x="1250" y="440" dy="-22">YATAK ODASI · 18,6 m²</text>
+  <text x="920" y="530">MUTFAK · 12,1 m²</text><text x="1300" y="700">BANYO · 6,2 m²</text>
+  <text x="1180" y="770" dy="-14" font-size="12">±0.00</text>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="1.2">
+  <path class="draw d1" pathLength="1" d="M880 120 H1460 M880 110 v20 M1160 110 v20 M1460 110 v20 M874 126 l12 -12 M1154 126 l12 -12 M1454 126 l12 -12"/>
+  <path class="draw d2" pathLength="1" d="M1520 170 V780 M1510 170 h20 M1510 420 h20 M1510 780 h20 M1514 176 l12 -12 M1514 426 l12 -12 M1514 786 l12 -12"/>
+</g>
+<g class="fade" style="fill:var(--ink)" font-size="14"><text x="990" y="104">580</text><text x="1280" y="104">600</text><text x="1532" y="300">250</text><text x="1532" y="610">360</text></g>
+<g style="stroke:var(--red);fill:var(--red)" stroke-width="2">
+  <path class="draw d3" pathLength="1" d="M840 470 H1500" stroke-dasharray="1" fill="none" style="stroke-dasharray:1"/>
+  <circle cx="820" cy="470" r="16" fill="none"/><text x="812" y="476" font-size="15" stroke="none">A</text>
+  <circle cx="1520" cy="470" r="16" fill="none"/><text x="1512" y="476" font-size="15" stroke="none">A</text>
+</g>
+<g transform="translate(200 220)" fill="none" style="stroke:var(--ink)" stroke-width="1.6">
+  <circle r="44"/><path d="M0 -60 L12 0 L0 -10 L-12 0 Z" style="fill:var(--ink)" stroke="none"/><text x="-6" y="-68" font-size="16" style="fill:var(--ink)" stroke="none">K</text>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="1.5" opacity="0.85">
+  <path class="draw d4" pathLength="1" d="M140 560 H560 V780 H140 Z M140 700 H560 M300 560 V780"/>
+  <path class="draw d5" pathLength="1" d="M180 680 L240 600 L300 680 M330 680 V610 H420 V680 M450 680 L500 630 L540 680"/>
+</g>
+<g class="fade" style="fill:var(--ink)" font-size="13"><text x="150" y="726">KESİT A–A · 1:50</text><text x="150" y="756">DÖŞEME +0.00 · TAVAN +2.80</text></g>
+<g transform="translate(1180 820)" fill="none" style="stroke:var(--ink)" stroke-opacity="0.75" stroke-width="1.4"><rect width="360" height="110"/><path d="M0 36 H360 M0 72 H360 M180 36 V110"/></g>
+<g style="fill:var(--ink)" font-size="13" opacity="0.9">
+  <text x="1194" y="844">PROJE: KONUT · KAT PLANI</text>
+  <text x="1194" y="880">ÖLÇEK 1:100</text><text x="1374" y="880">PAFTA A-101</text>
+  <text x="1194" y="916">ÇİZEN: —</text><text x="1374" y="916">REV. B<tspan class="blink"> _</tspan></text>
+</g>
+</svg>

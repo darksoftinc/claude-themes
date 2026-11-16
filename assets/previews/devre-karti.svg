@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <radialGradient id="bg" cx="0.6" cy="0.4" r="0.9"><stop offset="0" stop-color="#0f3d27"/><stop offset="1" stop-color="#05170e"/></radialGradient>
+  <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="#7fd6a4" fill-opacity="0.08"/></pattern>
+  <g id="chip">
+    <rect x="-60" y="-60" width="120" height="120" rx="6" fill="#121614" stroke="#2a332e" stroke-width="2"/>
+    <circle cx="-44" cy="-44" r="5" fill="#2a332e"/>
+    <g fill="#c99a4a"><rect x="-52" y="-72" width="6" height="12"/><rect x="-32" y="-72" width="6" height="12"/><rect x="-12" y="-72" width="6" height="12"/><rect x="8" y="-72" width="6" height="12"/><rect x="28" y="-72" width="6" height="12"/><rect x="46" y="-72" width="6" height="12"/>
+    <rect x="-52" y="60" width="6" height="12"/><rect x="-32" y="60" width="6" height="12"/><rect x="-12" y="60" width="6" height="12"/><rect x="8" y="60" width="6" height="12"/><rect x="28" y="60" width="6" height="12"/><rect x="46" y="60" width="6" height="12"/>
+    <rect x="-72" y="-52" width="12" height="6"/><rect x="-72" y="-32" width="12" height="6"/><rect x="-72" y="-12" width="12" height="6"/><rect x="-72" y="8" width="12" height="6"/><rect x="-72" y="28" width="12" height="6"/>
+    <rect x="60" y="-52" width="12" height="6"/><rect x="60" y="-32" width="12" height="6"/><rect x="60" y="-12" width="12" height="6"/><rect x="60" y="8" width="12" height="6"/><rect x="60" y="28" width="12" height="6"/></g>
+  </g>
+  <g id="via"><circle r="7" fill="#c99a4a"/><circle r="3" fill="#05170e"/></g>
+</defs>
+<style>
+  .tr { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 16s ease-in-out infinite; }
+  .t1 { animation-delay: 0.6s; } .t2 { animation-delay: 1.2s; } .t3 { animation-delay: 1.8s; } .t4 { animation-delay: 2.4s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 30%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  .sig { stroke-dasharray: 0.03 0.97; animation: sig 3.2s linear infinite; }
+  .s2 { animation-duration: 4.1s; animation-delay: -1.3s; } .s3 { animation-duration: 2.7s; animation-delay: -0.6s; } .s4 { animation-duration: 5s; animation-delay: -2.2s; }
+  @keyframes sig { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+  .led { animation: led 2.4s ease-in-out infinite alternate; }
+  .led.b { animation-delay: -1.2s; animation-duration: 0.9s; }
+  @keyframes led { from { opacity: 0.25; } to { opacity: 1; } }
+  text { font-family: ui-monospace, Consolas, "Courier New", monospace; fill: #e9f2ec; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .tr { stroke-dashoffset: 0; } .sig { display: none; } }
+</style>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#dots)"/>
+<rect x="40" y="40" width="1520" height="920" rx="24" fill="none" stroke="#e9f2ec" stroke-opacity="0.25" stroke-width="2"/>
+<g fill="none" stroke="#c99a4a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.9">
+  <path id="p1" class="tr" pathLength="1" d="M1128 300 H1020 L980 260 H760 L720 300 H520"/>
+  <path id="p2" class="tr t1" pathLength="1" d="M1128 340 H1060 L1020 380 V520 L980 560 H700"/>
+  <path id="p3" class="tr t2" pathLength="1" d="M1272 300 H1380 L1420 260 V160 H1500"/>
+  <path id="p4" class="tr t3" pathLength="1" d="M1272 380 H1360 L1400 420 V640 L1360 680 H1200"/>
+  <path id="p5" class="tr t4" pathLength="1" d="M1180 452 V560 L1140 600 V760 L1100 800 H820"/>
+  <path class="tr t2" pathLength="1" d="M1220 452 V520 L1260 560 V840 H1500"/>
+  <path class="tr t1" pathLength="1" d="M1180 248 V180 L1140 140 H900"/>
+  <path class="tr t3" pathLength="1" d="M1220 248 V200 L1260 160 H1340"/>
+  <path class="tr t4" pathLength="1" d="M520 300 V420 L480 460 H200"/>
+  <path class="tr" pathLength="1" d="M700 560 V700 L660 740 H260"/>
+</g>
+<g fill="none" stroke-width="7" stroke-linecap="round">
+  <path class="sig" pathLength="1" d="M1128 300 H1020 L980 260 H760 L720 300 H520" stroke="#fff3c4"/><path class="sig s2" pathLength="1" d="M1128 340 H1060 L1020 380 V520 L980 560 H700" stroke="#9ff7c8"/><path class="sig s3" pathLength="1" d="M1272 300 H1380 L1420 260 V160 H1500" stroke="#fff3c4"/>
+  <path class="sig s4" pathLength="1" d="M1272 380 H1360 L1400 420 V640 L1360 680 H1200" stroke="#9ff7c8"/><path class="sig s2" pathLength="1" d="M1180 452 V560 L1140 600 V760 L1100 800 H820" stroke="#fff3c4"/>
+</g>
+<use href="#chip" x="1200" y="350"/>
+<g transform="translate(600 820)"><rect x="-90" y="-36" width="180" height="72" rx="6" fill="#121614" stroke="#2a332e" stroke-width="2"/><g fill="#c99a4a"><rect x="-80" y="-48" width="8" height="12"/><rect x="-56" y="-48" width="8" height="12"/><rect x="-32" y="-48" width="8" height="12"/><rect x="-8" y="-48" width="8" height="12"/><rect x="16" y="-48" width="8" height="12"/><rect x="40" y="-48" width="8" height="12"/><rect x="64" y="-48" width="8" height="12"/></g></g>
+<g>
+  <use href="#via" x="520" y="300"/><use href="#via" x="700" y="560"/><use href="#via" x="1500" y="160"/><use href="#via" x="1200" y="680"/>
+  <use href="#via" x="820" y="800"/><use href="#via" x="1500" y="840"/><use href="#via" x="900" y="140"/><use href="#via" x="1340" y="160"/>
+  <use href="#via" x="200" y="460"/><use href="#via" x="260" y="740"/>
+</g>
+<g fill="#c9a45e" stroke="#2a332e" stroke-width="1.5">
+  <rect x="860" y="285" width="40" height="18" rx="3"/><rect x="820" y="545" width="40" height="18" rx="3"/><rect x="1390" y="500" width="18" height="40" rx="3"/>
+</g>
+<g fill="#3a2a1a" stroke="#2a332e"><rect x="1080" y="785" width="44" height="30" rx="4"/></g>
+<circle class="led" cx="1480" cy="230" r="9" fill="#5fe08f"/><circle class="led" cx="1480" cy="230" r="20" fill="#5fe08f" opacity="0.18"/>
+<circle class="led b" cx="1480" cy="270" r="9" fill="#ff6b6b"/>
+<g font-size="15" opacity="0.85">
+  <text x="1150" y="356">MCU-32</text><text x="1150" y="376" font-size="11" opacity="0.7">240 MHz</text>
+  <text x="864" y="278" font-size="12">R12</text><text x="822" y="538" font-size="12">R7</text><text x="1414" y="524" font-size="12">C4</text>
+  <text x="560" y="826">U2 · FLASH</text><text x="1500" y="214" font-size="12">D1</text><text x="1082" y="776" font-size="12">Q3</text>
+  <text x="80" y="920" font-size="13" opacity="0.6">REV 2.1 · 4 KATMAN · 1.6 mm</text>
+</g>
+<g fill="none" stroke="#e9f2ec" stroke-opacity="0.55" stroke-width="2"><circle cx="90" cy="90" r="16"/><circle cx="1510" cy="90" r="16"/><circle cx="90" cy="910" r="16"/><circle cx="1510" cy="910" r="16"/></g>
+</svg>

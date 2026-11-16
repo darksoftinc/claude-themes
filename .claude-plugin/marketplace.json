@@ -2,6 +2,6 @@
   "name": "claude-themes",
   "owner": { "name": "darksoftinc" },
   "plugins": [
-    { "name": "tema", "source": "./", "description": "On iki hareketli tema ve onları anında değiştiren /tema komutu" }
+    { "name": "tema", "source": "./", "description": "On yedi hareketli tema ve onları anında değiştiren /tema komutu" }
   ]
 }

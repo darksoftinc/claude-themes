@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Claude Code Themes — 12 animated themes" width="100%">
+<img src="assets/banner.svg" alt="Claude Code Themes — 17 animated themes" width="100%">
 
 <br>
 
-**12 hand-crafted themes with animated backdrops for the Claude Code desktop and mobile apps.**<br>
+**17 hand-crafted themes with animated backdrops for the Claude Code desktop and mobile apps.**<br>
 One plugin, one command: `/tema`
 
 <br>
 
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757?style=flat-square)
-![Themes](https://img.shields.io/badge/themes-12-6f42c1?style=flat-square)
+![Themes](https://img.shields.io/badge/themes-17-6f42c1?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-desktop%20%7C%20mobile-2ea44f?style=flat-square)
-![Version](https://img.shields.io/badge/version-0.2.0-0969da?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.3.0-0969da?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](LICENSE)
 
 [Gallery](#-gallery) · [Installation](#-installation) · [Usage](#-usage) · [How it works](#-how-it-works) · [Troubleshooting](#-troubleshooting)
@@ -23,10 +23,10 @@ One plugin, one command: `/tema`
 
 ## ✨ Highlights
 
-- **12 original themes** — every theme ships its own color palette and its own animated scene, all hand-drawn vector art.
+- **17 original themes** — every theme ships its own color palette and its own animated scene, all hand-drawn vector art.
 - **Instant switching** — type `/tema neon` and the look changes on the spot; no new conversation needed.
 - **Remembers your pick** — the chosen theme is saved, and new conversations open with it.
-- **Light and dark** — seven themes support both modes and their scenes change at night (stars come out, windows light up). Five are designed for dark mode.
+- **Light and dark** — nine themes support both modes and their scenes change at night (stars come out, windows light up). Seven are designed for dark mode and one, Patent, for light mode.
 - **Readability first** — every palette passes a contrast check, and panels stay legible over the backdrop behind a light frosted glass.
 - **Lightweight and safe** — scenes are pure SVG and CSS: no scripts, nothing loaded from the network. Animations pause when the system's "reduce motion" setting is on.
 
@@ -59,7 +59,24 @@ One plugin, one command: `/tema`
 </tr>
 </table>
 
-<sub>☀️🌙 light and dark mode · 🌙 designed for dark mode</sub>
+### Blueprint collection
+
+Technical drawings that draw themselves — dimension lines, callouts and title blocks, each from a different discipline.
+
+<table>
+<tr>
+<td width="33%" align="center"><img src="assets/previews/mavi-kopya.svg" alt="Mavi Kopya" width="100%"><br><b>Mavi Kopya</b><br><sub>Classic cyanotype blueprint with turning gears</sub><br><code>/tema mavi</code> · 🌙</td>
+<td width="33%" align="center"><img src="assets/previews/mimari-plan.svg" alt="Mimari Plan" width="100%"><br><b>Mimari Plan</b><br><sub>A diazo-print floor plan with swinging doors</sub><br><code>/tema mimari</code> · ☀️🌙</td>
+<td width="33%" align="center"><img src="assets/previews/devre-karti.svg" alt="Devre Kartı" width="100%"><br><b>Devre Kartı</b><br><sub>A circuit board with signals racing along copper traces</sub><br><code>/tema devre</code> · 🌙</td>
+</tr>
+<tr>
+<td align="center"><img src="assets/previews/patent.svg" alt="Patent" width="100%"><br><b>Patent</b><br><sub>A vintage patent drawing of a ticking pocket-watch movement</sub><br><code>/tema patent</code> · ☀️</td>
+<td align="center"><img src="assets/previews/roket-kesiti.svg" alt="Roket Kesiti" width="100%"><br><b>Roket Kesiti</b><br><sub>A rocket cutaway with a flight path that draws itself</sub><br><code>/tema roket</code> · 🌙</td>
+<td align="center"><img src="assets/previews/defter.svg" alt="Mühendislik Defteri" width="100%"><br><b>Mühendislik Defteri</b><br><sub>A pencil truss-bridge calculation on graph paper</sub><br><code>/tema defter</code> · ☀️🌙</td>
+</tr>
+</table>
+
+<sub>☀️🌙 light and dark mode · 🌙 designed for dark mode · ☀️ designed for light mode</sub>
 
 ---
 
@@ -127,7 +144,7 @@ The plugin is a single hooks module built on Claude Code's plugin interface:
 │   └── marketplace.json   # makes this repo an install source
 ├── hooks/
 │   ├── hooks.json         # names the module
-│   ├── register.tsx       # the 12 themes and the /tema command
+│   ├── register.tsx       # the 17 themes and the /tema command
 │   ├── make-colors.js     # expands a palette into design-system tokens
 │   └── tema.test.tsx      # tests for the command
 └── assets/                # README images

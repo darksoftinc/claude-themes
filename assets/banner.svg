@@ -16,6 +16,11 @@
   <linearGradient id="t10" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2c230"/><stop offset="1" stop-color="#d0342c"/></linearGradient>
   <linearGradient id="t11" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#07080d"/></linearGradient>
   <linearGradient id="t12" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9ede5"/><stop offset="1" stop-color="#4f7a6a"/></linearGradient>
+  <linearGradient id="t13" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efebe2"/><stop offset="1" stop-color="#3d3a8c"/></linearGradient>
+  <linearGradient id="t14" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c99a4a"/><stop offset="1" stop-color="#0b2a1c"/></linearGradient>
+  <linearGradient id="t15" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3ecdb"/><stop offset="1" stop-color="#2a2520"/></linearGradient>
+  <linearGradient id="t16" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#121417"/></linearGradient>
+  <linearGradient id="t17" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef3ea"/><stop offset="1" stop-color="#2a5db0"/></linearGradient>
 </defs>
 <style>
   .tile { animation: float 6s ease-in-out infinite alternate; }
@@ -31,20 +36,25 @@
 <circle class="orb" cx="1320" cy="120" r="260" fill="url(#glow)"/>
 <circle class="orb" cx="220" cy="420" r="240" fill="url(#glow2)" style="animation-direction: alternate-reverse"/>
 <text x="800" y="150" text-anchor="middle" font-size="76" font-weight="700" fill="#ffffff" letter-spacing="-1">Claude Code Themes</text>
-<text x="800" y="208" text-anchor="middle" font-size="28" fill="#c9c3e6">12 animated themes  ·  one-command switching  ·  desktop &amp; mobile</text>
-<g transform="translate(116 280)">
-  <g class="tile"><rect x="0" width="96" height="96" rx="20" fill="url(#t1)"/></g>
-  <g class="tile"><rect x="116" width="96" height="96" rx="20" fill="url(#t2)"/></g>
-  <g class="tile"><rect x="232" width="96" height="96" rx="20" fill="url(#t3)"/></g>
-  <g class="tile"><rect x="348" width="96" height="96" rx="20" fill="url(#t4)"/></g>
-  <g class="tile"><rect x="464" width="96" height="96" rx="20" fill="url(#t5)"/></g>
-  <g class="tile"><rect x="580" width="96" height="96" rx="20" fill="url(#t6)"/></g>
-  <g class="tile"><rect x="696" width="96" height="96" rx="20" fill="url(#t7)"/></g>
-  <g class="tile"><rect x="812" width="96" height="96" rx="20" fill="url(#t8)"/></g>
-  <g class="tile"><rect x="928" width="96" height="96" rx="20" fill="url(#t9)"/></g>
-  <g class="tile"><rect x="1044" width="96" height="96" rx="20" fill="url(#t10)"/></g>
-  <g class="tile"><rect x="1160" width="96" height="96" rx="20" fill="url(#t11)"/></g>
-  <g class="tile"><rect x="1276" width="96" height="96" rx="20" fill="url(#t12)"/></g>
+<text x="800" y="208" text-anchor="middle" font-size="28" fill="#c9c3e6">17 animated themes  ·  one-command switching  ·  desktop &amp; mobile</text>
+<g transform="translate(126 296)">
+  <g class="tile"><rect x="0" width="68" height="68" rx="16" fill="url(#t1)"/></g>
+  <g class="tile"><rect x="80" width="68" height="68" rx="16" fill="url(#t2)"/></g>
+  <g class="tile"><rect x="160" width="68" height="68" rx="16" fill="url(#t3)"/></g>
+  <g class="tile"><rect x="240" width="68" height="68" rx="16" fill="url(#t4)"/></g>
+  <g class="tile"><rect x="320" width="68" height="68" rx="16" fill="url(#t5)"/></g>
+  <g class="tile"><rect x="400" width="68" height="68" rx="16" fill="url(#t6)"/></g>
+  <g class="tile"><rect x="480" width="68" height="68" rx="16" fill="url(#t7)"/></g>
+  <g class="tile"><rect x="560" width="68" height="68" rx="16" fill="url(#t8)"/></g>
+  <g class="tile"><rect x="640" width="68" height="68" rx="16" fill="url(#t9)"/></g>
+  <g class="tile"><rect x="720" width="68" height="68" rx="16" fill="url(#t10)"/></g>
+  <g class="tile"><rect x="800" width="68" height="68" rx="16" fill="url(#t11)"/></g>
+  <g class="tile"><rect x="880" width="68" height="68" rx="16" fill="url(#t12)"/></g>
+  <g class="tile"><rect x="960" width="68" height="68" rx="16" fill="url(#t13)"/></g>
+  <g class="tile"><rect x="1040" width="68" height="68" rx="16" fill="url(#t14)"/></g>
+  <g class="tile"><rect x="1120" width="68" height="68" rx="16" fill="url(#t15)"/></g>
+  <g class="tile"><rect x="1200" width="68" height="68" rx="16" fill="url(#t16)"/></g>
+  <g class="tile"><rect x="1280" width="68" height="68" rx="16" fill="url(#t17)"/></g>
 </g>
 <text x="800" y="440" text-anchor="middle" font-size="22" fill="#8f88b3" font-family="Consolas, 'Courier New', monospace">/tema neon   ·   /tema kapadokya   ·   /tema yorunge</text>
 </svg>

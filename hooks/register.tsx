@@ -1201,6 +1201,480 @@ const THEMES: Theme[] = [
 </g>
 </svg>`,
   },
+  {
+    id: 'mimari-plan',
+    label: 'Mimari Plan',
+    blurb: 'Ozalit kâğıdında kendini çizen kat planı',
+    alt: 'Ozalit kâğıdında kendini çizen bir kat planı, açılıp kapanan kapılar ve ölçü zincirleri',
+    glass: { blur: 3, opacity: 0.58 },
+    def: {
+      label: 'Mimari Plan',
+      roles: { accent: '#3d3a8c', danger: '#b8322b', success: '#2f7a4f', warning: '#a8701a', pro: '#7a3f8c' },
+      light: {
+        gray: {
+          anchors: {
+            'surface-0': '#ece8df',
+            'surface-1': '#f3f0e9',
+            'surface-2': '#faf8f3',
+            'text-primary': '#16142e',
+            'text-secondary': '#36345a',
+            'text-muted': '#524f74',
+          },
+        },
+      },
+      dark: {
+        roles: { accent: '#b9b6ff' },
+        gray: {
+          anchors: {
+            'surface-0': '#111024',
+            'surface-1': '#16152d',
+            'surface-2': '#1c1a36',
+            'surface-3': '#211f3e',
+            'text-primary': '#efeefe',
+            'text-secondary': '#cbc9e8',
+            'text-muted': '#a4a1c6',
+          },
+        },
+      },
+    },
+    scene: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" style="--paper:#efebe2;--ink:#3d3a8c;--red:#c0392b;--fill:#3d3a8c">
+<defs>
+  <pattern id="g1" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0 H0 V25" fill="none" style="stroke:var(--ink)" stroke-opacity="0.06"/></pattern>
+  <pattern id="g2" width="125" height="125" patternUnits="userSpaceOnUse"><path d="M125 0 H0 V125" fill="none" style="stroke:var(--ink)" stroke-opacity="0.13"/></pattern>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" style="stroke:var(--ink)" stroke-opacity="0.5" stroke-width="1.4"/></pattern>
+</defs>
+<style>
+  @media (prefers-color-scheme: dark) { svg { --paper:#121128 !important; --ink:#b9b6ff !important; --red:#ff7b6b !important; } }
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 20s ease-in-out infinite; }
+  .d1 { animation-delay: 0.6s; } .d2 { animation-delay: 1.5s; } .d3 { animation-delay: 2.4s; } .d4 { animation-delay: 3.3s; } .d5 { animation-delay: 4.2s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 30%, 86% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -1; } }
+  .door { transform-box: view-box; animation: door 9s ease-in-out infinite; }
+  @keyframes door { 0%, 20% { transform: rotate(0deg); } 45%, 70% { transform: rotate(-80deg); } 95%, 100% { transform: rotate(0deg); } }
+  .fade { animation: fade 20s ease-in-out infinite; }
+  @keyframes fade { 0%, 20% { opacity: 0; } 35%, 86% { opacity: 1; } 100% { opacity: 0; } }
+  .blink { animation: blink 1.2s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  text { font-family: ui-monospace, Consolas, "Courier New", monospace; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw { stroke-dashoffset: 0; } .fade { opacity: 1; } }
+</style>
+<rect width="1600" height="1000" style="fill:var(--paper)"/>
+<rect width="1600" height="1000" fill="url(#g1)"/>
+<rect width="1600" height="1000" fill="url(#g2)"/>
+<rect x="36" y="36" width="1528" height="928" fill="none" style="stroke:var(--ink)" stroke-opacity="0.5" stroke-width="2"/>
+<g fill="none" style="stroke:var(--ink)" stroke-linecap="square">
+  <path class="draw" pathLength="1" d="M880 170 H1460 V780 H880 Z" stroke-width="12"/>
+  <path class="draw d1" pathLength="1" d="M1160 170 V420 M880 420 H1060 M1120 420 H1460 M1160 560 V780 M1160 560 H1260 M1320 560 H1460" stroke-width="6"/>
+  <path class="draw d2" pathLength="1" d="M960 170 H1080 M1260 170 H1380 M1460 250 V350 M880 560 V680" stroke-width="3" stroke-opacity="0.9"/>
+  <path class="draw d2" pathLength="1" d="M960 163 H1080 M960 177 H1080 M1260 163 H1380 M1260 177 H1380" stroke-width="1.2"/>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="2">
+  <g transform="translate(1060 420)"><g class="door"><path d="M0 0 H60" stroke-width="4"/></g><path d="M60 0 A60 60 0 0 0 10.4 -59" stroke-dasharray="5 5" stroke-opacity="0.6"/></g>
+  <g transform="translate(1260 560)"><g class="door" style="animation-delay:-4s"><path d="M0 0 H60" stroke-width="4"/></g><path d="M60 0 A60 60 0 0 0 10.4 -59" stroke-dasharray="5 5" stroke-opacity="0.6"/></g>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="1.6">
+  <rect class="draw d3" pathLength="1" x="940" y="230" width="150" height="80" rx="10"/>
+  <circle class="draw d3" pathLength="1" cx="1030" cy="355" r="34"/>
+  <rect class="draw d4" pathLength="1" x="1250" y="210" width="160" height="190" rx="4"/>
+  <path class="draw d4" pathLength="1" d="M1250 250 H1410 M1275 225 h40 v18 h-40 Z M1345 225 h40 v18 h-40 Z"/>
+  <path class="draw d5" pathLength="1" d="M900 600 H1120 V640 H900 Z M920 600 v40 M1100 600 v40"/>
+  <rect class="draw d5" pathLength="1" x="1200" y="600" width="60" height="140" rx="26"/>
+  <circle class="draw d5" pathLength="1" cx="1410" cy="610" r="22"/>
+</g>
+<g class="fade" style="fill:var(--ink)" font-size="15">
+  <text x="960" y="390">SALON · 32,4 m²</text><text x="1250" y="440" dy="-22">YATAK ODASI · 18,6 m²</text>
+  <text x="920" y="530">MUTFAK · 12,1 m²</text><text x="1300" y="700">BANYO · 6,2 m²</text>
+  <text x="1180" y="770" dy="-14" font-size="12">±0.00</text>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="1.2">
+  <path class="draw d1" pathLength="1" d="M880 120 H1460 M880 110 v20 M1160 110 v20 M1460 110 v20 M874 126 l12 -12 M1154 126 l12 -12 M1454 126 l12 -12"/>
+  <path class="draw d2" pathLength="1" d="M1520 170 V780 M1510 170 h20 M1510 420 h20 M1510 780 h20 M1514 176 l12 -12 M1514 426 l12 -12 M1514 786 l12 -12"/>
+</g>
+<g class="fade" style="fill:var(--ink)" font-size="14"><text x="990" y="104">580</text><text x="1280" y="104">600</text><text x="1532" y="300">250</text><text x="1532" y="610">360</text></g>
+<g style="stroke:var(--red);fill:var(--red)" stroke-width="2">
+  <path class="draw d3" pathLength="1" d="M840 470 H1500" stroke-dasharray="1" fill="none" style="stroke-dasharray:1"/>
+  <circle cx="820" cy="470" r="16" fill="none"/><text x="812" y="476" font-size="15" stroke="none">A</text>
+  <circle cx="1520" cy="470" r="16" fill="none"/><text x="1512" y="476" font-size="15" stroke="none">A</text>
+</g>
+<g transform="translate(200 220)" fill="none" style="stroke:var(--ink)" stroke-width="1.6">
+  <circle r="44"/><path d="M0 -60 L12 0 L0 -10 L-12 0 Z" style="fill:var(--ink)" stroke="none"/><text x="-6" y="-68" font-size="16" style="fill:var(--ink)" stroke="none">K</text>
+</g>
+<g fill="none" style="stroke:var(--ink)" stroke-width="1.5" opacity="0.85">
+  <path class="draw d4" pathLength="1" d="M140 560 H560 V780 H140 Z M140 700 H560 M300 560 V780"/>
+  <path class="draw d5" pathLength="1" d="M180 680 L240 600 L300 680 M330 680 V610 H420 V680 M450 680 L500 630 L540 680"/>
+</g>
+<g class="fade" style="fill:var(--ink)" font-size="13"><text x="150" y="726">KESİT A–A · 1:50</text><text x="150" y="756">DÖŞEME +0.00 · TAVAN +2.80</text></g>
+<g transform="translate(1180 820)" fill="none" style="stroke:var(--ink)" stroke-opacity="0.75" stroke-width="1.4"><rect width="360" height="110"/><path d="M0 36 H360 M0 72 H360 M180 36 V110"/></g>
+<g style="fill:var(--ink)" font-size="13" opacity="0.9">
+  <text x="1194" y="844">PROJE: KONUT · KAT PLANI</text>
+  <text x="1194" y="880">ÖLÇEK 1:100</text><text x="1374" y="880">PAFTA A-101</text>
+  <text x="1194" y="916">ÇİZEN: —</text><text x="1374" y="916">REV. B<tspan class="blink"> _</tspan></text>
+</g>
+</svg>`,
+  },
+  {
+    id: 'devre-karti',
+    label: 'Devre Kartı',
+    blurb: 'Bakır yollarda akan sinyaller (koyu)',
+    alt: 'Yeşil bir devre kartında kendini çizen bakır yollar ve üzerlerinde akan sinyaller',
+    glass: { blur: 3, tint: '#06150e', opacity: 0.55 },
+    def: {
+      label: 'Devre Kartı',
+      only: 'dark',
+      roles: { accent: '#e0b25c', danger: '#ff6b6b', success: '#5fe08f', warning: '#ff9f43', pro: '#b99bff' },
+      dark: {
+        gray: {
+          anchors: {
+            'surface-0': '#06150e',
+            'surface-1': '#0a1d14',
+            'surface-2': '#0e251a',
+            'surface-3': '#122c20',
+            'text-primary': '#ecf8f1',
+            'text-secondary': '#bfdccb',
+            'text-muted': '#96bba5',
+          },
+        },
+      },
+    },
+    scene: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <radialGradient id="bg" cx="0.6" cy="0.4" r="0.9"><stop offset="0" stop-color="#0f3d27"/><stop offset="1" stop-color="#05170e"/></radialGradient>
+  <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="#7fd6a4" fill-opacity="0.08"/></pattern>
+  <g id="chip">
+    <rect x="-60" y="-60" width="120" height="120" rx="6" fill="#121614" stroke="#2a332e" stroke-width="2"/>
+    <circle cx="-44" cy="-44" r="5" fill="#2a332e"/>
+    <g fill="#c99a4a"><rect x="-52" y="-72" width="6" height="12"/><rect x="-32" y="-72" width="6" height="12"/><rect x="-12" y="-72" width="6" height="12"/><rect x="8" y="-72" width="6" height="12"/><rect x="28" y="-72" width="6" height="12"/><rect x="46" y="-72" width="6" height="12"/>
+    <rect x="-52" y="60" width="6" height="12"/><rect x="-32" y="60" width="6" height="12"/><rect x="-12" y="60" width="6" height="12"/><rect x="8" y="60" width="6" height="12"/><rect x="28" y="60" width="6" height="12"/><rect x="46" y="60" width="6" height="12"/>
+    <rect x="-72" y="-52" width="12" height="6"/><rect x="-72" y="-32" width="12" height="6"/><rect x="-72" y="-12" width="12" height="6"/><rect x="-72" y="8" width="12" height="6"/><rect x="-72" y="28" width="12" height="6"/>
+    <rect x="60" y="-52" width="12" height="6"/><rect x="60" y="-32" width="12" height="6"/><rect x="60" y="-12" width="12" height="6"/><rect x="60" y="8" width="12" height="6"/><rect x="60" y="28" width="12" height="6"/></g>
+  </g>
+  <g id="via"><circle r="7" fill="#c99a4a"/><circle r="3" fill="#05170e"/></g>
+</defs>
+<style>
+  .tr { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 16s ease-in-out infinite; }
+  .t1 { animation-delay: 0.6s; } .t2 { animation-delay: 1.2s; } .t3 { animation-delay: 1.8s; } .t4 { animation-delay: 2.4s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 30%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  .sig { stroke-dasharray: 0.03 0.97; animation: sig 3.2s linear infinite; }
+  .s2 { animation-duration: 4.1s; animation-delay: -1.3s; } .s3 { animation-duration: 2.7s; animation-delay: -0.6s; } .s4 { animation-duration: 5s; animation-delay: -2.2s; }
+  @keyframes sig { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+  .led { animation: led 2.4s ease-in-out infinite alternate; }
+  .led.b { animation-delay: -1.2s; animation-duration: 0.9s; }
+  @keyframes led { from { opacity: 0.25; } to { opacity: 1; } }
+  text { font-family: ui-monospace, Consolas, "Courier New", monospace; fill: #e9f2ec; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .tr { stroke-dashoffset: 0; } .sig { display: none; } }
+</style>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#dots)"/>
+<rect x="40" y="40" width="1520" height="920" rx="24" fill="none" stroke="#e9f2ec" stroke-opacity="0.25" stroke-width="2"/>
+<g fill="none" stroke="#c99a4a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.9">
+  <path id="p1" class="tr" pathLength="1" d="M1128 300 H1020 L980 260 H760 L720 300 H520"/>
+  <path id="p2" class="tr t1" pathLength="1" d="M1128 340 H1060 L1020 380 V520 L980 560 H700"/>
+  <path id="p3" class="tr t2" pathLength="1" d="M1272 300 H1380 L1420 260 V160 H1500"/>
+  <path id="p4" class="tr t3" pathLength="1" d="M1272 380 H1360 L1400 420 V640 L1360 680 H1200"/>
+  <path id="p5" class="tr t4" pathLength="1" d="M1180 452 V560 L1140 600 V760 L1100 800 H820"/>
+  <path class="tr t2" pathLength="1" d="M1220 452 V520 L1260 560 V840 H1500"/>
+  <path class="tr t1" pathLength="1" d="M1180 248 V180 L1140 140 H900"/>
+  <path class="tr t3" pathLength="1" d="M1220 248 V200 L1260 160 H1340"/>
+  <path class="tr t4" pathLength="1" d="M520 300 V420 L480 460 H200"/>
+  <path class="tr" pathLength="1" d="M700 560 V700 L660 740 H260"/>
+</g>
+<g fill="none" stroke-width="7" stroke-linecap="round">
+  <path class="sig" pathLength="1" d="M1128 300 H1020 L980 260 H760 L720 300 H520" stroke="#fff3c4"/><path class="sig s2" pathLength="1" d="M1128 340 H1060 L1020 380 V520 L980 560 H700" stroke="#9ff7c8"/><path class="sig s3" pathLength="1" d="M1272 300 H1380 L1420 260 V160 H1500" stroke="#fff3c4"/>
+  <path class="sig s4" pathLength="1" d="M1272 380 H1360 L1400 420 V640 L1360 680 H1200" stroke="#9ff7c8"/><path class="sig s2" pathLength="1" d="M1180 452 V560 L1140 600 V760 L1100 800 H820" stroke="#fff3c4"/>
+</g>
+<use href="#chip" x="1200" y="350"/>
+<g transform="translate(600 820)"><rect x="-90" y="-36" width="180" height="72" rx="6" fill="#121614" stroke="#2a332e" stroke-width="2"/><g fill="#c99a4a"><rect x="-80" y="-48" width="8" height="12"/><rect x="-56" y="-48" width="8" height="12"/><rect x="-32" y="-48" width="8" height="12"/><rect x="-8" y="-48" width="8" height="12"/><rect x="16" y="-48" width="8" height="12"/><rect x="40" y="-48" width="8" height="12"/><rect x="64" y="-48" width="8" height="12"/></g></g>
+<g>
+  <use href="#via" x="520" y="300"/><use href="#via" x="700" y="560"/><use href="#via" x="1500" y="160"/><use href="#via" x="1200" y="680"/>
+  <use href="#via" x="820" y="800"/><use href="#via" x="1500" y="840"/><use href="#via" x="900" y="140"/><use href="#via" x="1340" y="160"/>
+  <use href="#via" x="200" y="460"/><use href="#via" x="260" y="740"/>
+</g>
+<g fill="#c9a45e" stroke="#2a332e" stroke-width="1.5">
+  <rect x="860" y="285" width="40" height="18" rx="3"/><rect x="820" y="545" width="40" height="18" rx="3"/><rect x="1390" y="500" width="18" height="40" rx="3"/>
+</g>
+<g fill="#3a2a1a" stroke="#2a332e"><rect x="1080" y="785" width="44" height="30" rx="4"/></g>
+<circle class="led" cx="1480" cy="230" r="9" fill="#5fe08f"/><circle class="led" cx="1480" cy="230" r="20" fill="#5fe08f" opacity="0.18"/>
+<circle class="led b" cx="1480" cy="270" r="9" fill="#ff6b6b"/>
+<g font-size="15" opacity="0.85">
+  <text x="1150" y="356">MCU-32</text><text x="1150" y="376" font-size="11" opacity="0.7">240 MHz</text>
+  <text x="864" y="278" font-size="12">R12</text><text x="822" y="538" font-size="12">R7</text><text x="1414" y="524" font-size="12">C4</text>
+  <text x="560" y="826">U2 · FLASH</text><text x="1500" y="214" font-size="12">D1</text><text x="1082" y="776" font-size="12">Q3</text>
+  <text x="80" y="920" font-size="13" opacity="0.6">REV 2.1 · 4 KATMAN · 1.6 mm</text>
+</g>
+<g fill="none" stroke="#e9f2ec" stroke-opacity="0.55" stroke-width="2"><circle cx="90" cy="90" r="16"/><circle cx="1510" cy="90" r="16"/><circle cx="90" cy="910" r="16"/><circle cx="1510" cy="910" r="16"/></g>
+</svg>`,
+  },
+  {
+    id: 'patent',
+    label: 'Patent',
+    blurb: 'Eski patent çiziminde işleyen cep saati',
+    alt: 'Eski bir patent çiziminde işleyen cep saati mekanizması ve numaralı açıklama çizgileri',
+    glass: { blur: 3, opacity: 0.58 },
+    def: {
+      label: 'Patent',
+      only: 'light',
+      roles: { accent: '#2f4f6f', danger: '#a8322a', success: '#4e6e3a', warning: '#9c6b16', pro: '#6b4a7a' },
+      light: {
+        gray: {
+          anchors: {
+            'surface-0': '#e9dfca',
+            'surface-1': '#f0e8d6',
+            'surface-2': '#f7f2e6',
+            'text-primary': '#1c1712',
+            'text-secondary': '#3d342a',
+            'text-muted': '#5a4f42',
+          },
+        },
+      },
+    },
+    scene: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <radialGradient id="paper" cx="0.5" cy="0.5" r="0.75"><stop offset="0" stop-color="#f3ecdb"/><stop offset="0.75" stop-color="#e8dcc2"/><stop offset="1" stop-color="#d6c5a2"/></radialGradient>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#2a2520" stroke-width="1.1"/></pattern>
+  <pattern id="spots" width="300" height="300" patternUnits="userSpaceOnUse"><g fill="#8a6a3a" fill-opacity="0.06"><circle cx="40" cy="60" r="18"/><circle cx="210" cy="190" r="26"/><circle cx="120" cy="260" r="10"/></g></pattern>
+  <path id="g1" d="M-10.0 -103.5L-6.7 -119.8L6.7 -119.8L10.0 -103.5L26.0 -100.7L34.7 -114.9L47.3 -110.3L44.8 -93.9L58.9 -85.7L71.9 -96.1L82.1 -87.5L74.2 -72.9L84.7 -60.4L100.4 -65.7L107.1 -54.1L94.6 -43.1L100.2 -27.8L116.8 -27.4L119.2 -14.2L103.7 -8.2L103.7 8.2L119.2 14.2L116.8 27.4L100.2 27.8L94.6 43.1L107.1 54.1L100.4 65.7L84.7 60.4L74.2 72.9L82.1 87.5L71.9 96.1L58.9 85.7L44.8 93.9L47.3 110.3L34.7 114.9L26.0 100.7L10.0 103.5L6.7 119.8L-6.7 119.8L-10.0 103.5L-26.0 100.7L-34.7 114.9L-47.3 110.3L-44.8 93.9L-58.9 85.7L-71.9 96.1L-82.1 87.5L-74.2 72.9L-84.7 60.4L-100.4 65.7L-107.1 54.1L-94.6 43.1L-100.2 27.8L-116.8 27.4L-119.2 14.2L-103.7 8.2L-103.7 -8.2L-119.2 -14.2L-116.8 -27.4L-100.2 -27.8L-94.6 -43.1L-107.1 -54.1L-100.4 -65.7L-84.7 -60.4L-74.2 -72.9L-82.1 -87.5L-71.9 -96.1L-58.9 -85.7L-44.8 -93.9L-47.3 -110.3L-34.7 -114.9L-26.0 -100.7Z"/>
+  <path id="g2" d="M-7.7 -53.4L-5.5 -65.8L5.5 -65.8L7.7 -53.4L20.0 -50.2L28.1 -59.7L37.7 -54.2L33.4 -42.4L42.4 -33.4L54.2 -37.7L59.7 -28.1L50.2 -20.0L53.4 -7.7L65.8 -5.5L65.8 5.5L53.4 7.7L50.2 20.0L59.7 28.1L54.2 37.7L42.4 33.4L33.4 42.4L37.7 54.2L28.1 59.7L20.0 50.2L7.7 53.4L5.5 65.8L-5.5 65.8L-7.7 53.4L-20.0 50.2L-28.1 59.7L-37.7 54.2L-33.4 42.4L-42.4 33.4L-54.2 37.7L-59.7 28.1L-50.2 20.0L-53.4 7.7L-65.8 5.5L-65.8 -5.5L-53.4 -7.7L-50.2 -20.0L-59.7 -28.1L-54.2 -37.7L-42.4 -33.4L-33.4 -42.4L-37.7 -54.2L-28.1 -59.7L-20.0 -50.2Z"/>
+  <path id="g3" d="M-6.4 -36.4L-4.6 -45.8L4.6 -45.8L6.4 -36.4L16.3 -33.2L23.2 -39.7L30.6 -34.3L26.6 -25.7L32.7 -17.3L42.1 -18.5L45.0 -9.8L36.6 -5.2L36.6 5.2L45.0 9.8L42.1 18.5L32.7 17.3L26.6 25.7L30.6 34.3L23.2 39.7L16.3 33.2L6.4 36.4L4.6 45.8L-4.6 45.8L-6.4 36.4L-16.3 33.2L-23.2 39.7L-30.6 34.3L-26.6 25.7L-32.7 17.3L-42.1 18.5L-45.0 9.8L-36.6 5.2L-36.6 -5.2L-45.0 -9.8L-42.1 -18.5L-32.7 -17.3L-26.6 -25.7L-30.6 -34.3L-23.2 -39.7L-16.3 -33.2Z"/>
+  <path id="esc" d="M-5.1 -43.7L-3.9 -57.9L3.9 -57.9L5.1 -43.7L13.2 -42.0L20.0 -54.4L27.1 -51.3L22.4 -37.9L29.1 -33.0L40.4 -41.6L45.6 -35.8L35.9 -25.5L40.0 -18.3L53.8 -21.6L56.2 -14.2L43.1 -8.7L44.0 -0.5L58.0 2.2L57.1 9.9L42.9 9.6L40.4 17.5L52.1 25.6L48.2 32.3L35.3 26.2L29.8 32.4L37.2 44.5L30.9 49.1L21.6 38.3L14.0 41.7L15.8 55.8L8.2 57.4L4.1 43.8L-4.1 43.8L-8.2 57.4L-15.8 55.8L-14.0 41.7L-21.6 38.3L-30.9 49.1L-37.2 44.5L-29.8 32.4L-35.3 26.2L-48.2 32.3L-52.1 25.6L-40.4 17.5L-42.9 9.6L-57.1 9.9L-58.0 2.2L-44.0 -0.5L-43.1 -8.7L-56.2 -14.2L-53.8 -21.6L-40.0 -18.3L-35.9 -25.5L-45.6 -35.8L-40.4 -41.6L-29.1 -33.0L-22.4 -37.9L-27.1 -51.3L-20.0 -54.4L-13.2 -42.0Z"/>
+</defs>
+<style>
+  .r1 { transform-box: view-box; animation: tick 60s steps(60) infinite; }
+  .r2 { transform-box: view-box; animation: tick 20s steps(60) infinite reverse; }
+  .r3 { transform-box: view-box; animation: tick 8s steps(60) infinite; }
+  .r4 { transform-box: view-box; animation: tick 15s steps(15) infinite reverse; }
+  @keyframes tick { to { transform: rotate(360deg); } }
+  .bal { transform-box: view-box; animation: bal 1s ease-in-out infinite alternate; }
+  @keyframes bal { from { transform: rotate(-150deg); } to { transform: rotate(150deg); } }
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 18s ease-in-out infinite; }
+  .d1 { animation-delay: 0.7s; } .d2 { animation-delay: 1.4s; } .d3 { animation-delay: 2.2s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 28%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  text { font-family: "Times New Roman", Georgia, serif; fill: #2a2520; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw { stroke-dashoffset: 0; } }
+</style>
+<rect width="1600" height="1000" fill="url(#paper)"/>
+<rect width="1600" height="1000" fill="url(#spots)"/>
+<rect x="60" y="60" width="1480" height="880" fill="none" stroke="#2a2520" stroke-width="3"/>
+<rect x="72" y="72" width="1456" height="856" fill="none" stroke="#2a2520" stroke-width="1"/>
+<g font-size="22" text-anchor="middle"><text x="800" y="118" letter-spacing="3">CEP SAATİ MEKANİZMASI</text></g>
+<g font-size="15" font-style="italic"><text x="110" y="118">Pat. No. 1.923.552</text><text x="1490" y="118" text-anchor="end">Sayfa 1 / 3</text></g>
+<g transform="translate(1110 520)" fill="none" stroke="#2a2520">
+  <circle r="300" stroke-width="3"/><circle r="286" stroke-width="1.2"/>
+  <circle r="300" fill="url(#hatch)" fill-opacity="0.18" stroke="none"/>
+  <circle r="276" fill="#efe6d1" stroke="none"/>
+  <path d="M-30 -300 V-340 H30 V-300 M-18 -340 V-372 H18 V-340" stroke-width="2.5" fill="#efe6d1"/>
+  <circle cy="-390" r="26" stroke-width="2.5"/>
+  <g transform="translate(-40 -20)"><g class="r1"><use href="#g1" stroke-width="2" fill="#efe6d1"/><circle r="70" stroke-width="1.4"/><path d="M0 -70 V70 M-70 0 H70 M-50 -50 L50 50 M-50 50 L50 -50" stroke-width="1.2"/><circle r="12" fill="#2a2520"/></g></g>
+  <g transform="translate(130 -120)"><g class="r2"><use href="#g2" stroke-width="2" fill="#efe6d1"/><circle r="22" fill="url(#hatch)" stroke-width="1.4"/><circle r="7" fill="#2a2520"/></g></g>
+  <g transform="translate(150 60)"><g class="r3"><use href="#g3" stroke-width="2" fill="#efe6d1"/><circle r="6" fill="#2a2520"/></g></g>
+  <g transform="translate(-60 190)"><g class="r4"><use href="#esc" stroke-width="2" fill="#efe6d1"/><circle r="6" fill="#2a2520"/></g></g>
+  <g transform="translate(-200 120)"><g class="bal"><circle r="64" stroke-width="2.5"/><path d="M-64 0 H64 M0 -64 V64" stroke-width="2"/><circle r="5" fill="#2a2520"/></g><path d="M0 0 m-20 0 a20 20 0 1 1 40 0 a16 16 0 1 1 -32 0 a12 12 0 1 1 24 0" stroke-width="1"/></g>
+  <path d="M-110 210 L-20 150 L10 175" stroke-width="3"/><circle cx="-110" cy="210" r="6" fill="#2a2520"/>
+  <g stroke-width="1.2"><circle cx="-180" cy="-190" r="10"/><circle cx="210" cy="-10" r="10"/><circle cx="60" cy="230" r="10"/><circle cx="-250" cy="-40" r="10"/></g>
+</g>
+<g fill="none" stroke="#2a2520" stroke-width="1.2">
+  <path class="draw" pathLength="1" d="M1070 500 L760 300"/><path class="draw d1" pathLength="1" d="M1240 400 L1460 230"/>
+  <path class="draw d2" pathLength="1" d="M1260 580 L1470 640"/><path class="draw d3" pathLength="1" d="M910 640 L700 760"/>
+  <path class="draw d1" pathLength="1" d="M1050 710 L860 860"/><path class="draw d2" pathLength="1" d="M1110 120 L1110 160" />
+</g>
+<g font-size="20" font-style="italic"><text x="736" y="296">12</text><text x="1466" y="226">14</text><text x="1476" y="650">16</text><text x="672" y="776">18</text><text x="834" y="878">20</text></g>
+<text x="1060" y="880" font-size="26" font-style="italic">Fig. 1.</text>
+<g transform="translate(140 300)" fill="none" stroke="#2a2520">
+  <g transform="translate(160 140)"><g class="r3"><use href="#g3" transform="scale(2.4)" stroke-width="0.9" fill="#efe6d1"/><circle r="16" fill="url(#hatch)" stroke-width="1.4"/></g></g>
+  <path class="draw" pathLength="1" d="M160 260 V340 M60 340 H260 M60 330 v20 M260 330 v20" stroke-width="1"/>
+</g>
+<g font-size="17" font-style="italic"><text x="270" y="660" text-anchor="middle">Fig. 2. — Ara çark, büyütülmüş.</text></g>
+<g font-size="14" opacity="0.85"><text x="110" y="890">Tanıklar: ............................</text><text x="110" y="914">Mucit: ............................</text></g>
+</svg>`,
+  },
+  {
+    id: 'roket-kesiti',
+    label: 'Roket Kesiti',
+    blurb: 'Kademeler ve kendini çizen yörünge (koyu)',
+    alt: 'Kademeleri, yakıt tankları ve kendini çizen uçuş yörüngesiyle teknik bir roket kesiti',
+    glass: { blur: 3, tint: '#0d0f12', opacity: 0.55 },
+    def: {
+      label: 'Roket Kesiti',
+      only: 'dark',
+      roles: { accent: '#ff8a3d', danger: '#ff5f5f', success: '#6ad99a', warning: '#ffd166', pro: '#b8a0ff' },
+      dark: {
+        gray: {
+          anchors: {
+            'surface-0': '#0d0f12',
+            'surface-1': '#121519',
+            'surface-2': '#171b20',
+            'surface-3': '#1c2026',
+            'text-primary': '#f4f1eb',
+            'text-secondary': '#d0cbc2',
+            'text-muted': '#a8a399',
+          },
+        },
+      },
+    },
+    scene: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <radialGradient id="bg" cx="0.7" cy="0.4" r="0.9"><stop offset="0" stop-color="#1b1f25"/><stop offset="1" stop-color="#0a0b0d"/></radialGradient>
+  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#e8e3d8" stroke-opacity="0.05"/></pattern>
+  <pattern id="G" width="200" height="200" patternUnits="userSpaceOnUse"><path d="M200 0 H0 V200" fill="none" stroke="#e8e3d8" stroke-opacity="0.1"/></pattern>
+  <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#e8e3d8" stroke-opacity="0.35" stroke-width="1"/></pattern>
+</defs>
+<style>
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 20s ease-in-out infinite; }
+  .d1 { animation-delay: 0.9s; } .d2 { animation-delay: 1.8s; } .d3 { animation-delay: 2.7s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 32%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  .traj { stroke-dasharray: 1; stroke-dashoffset: 1; animation: traj 14s cubic-bezier(.4,0,.2,1) infinite; }
+  @keyframes traj { 0% { stroke-dashoffset: 1; } 70%, 92% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; opacity: 0; } }
+  .craft { offset-path: path('M180 860 C420 840 640 700 820 500 S1080 170 1200 130'); offset-rotate: auto; animation: fly 14s cubic-bezier(.4,0,.2,1) infinite; }
+  @keyframes fly { 0% { offset-distance: 0%; opacity: 1; } 70% { offset-distance: 100%; opacity: 1; } 92% { offset-distance: 100%; opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+  .flame { transform-box: fill-box; transform-origin: top center; animation: flame 0.18s ease-in-out infinite alternate; }
+  @keyframes flame { from { transform: scaleY(0.8); } to { transform: scaleY(1.15); } }
+  .blink { animation: blink 1s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0.2; } }
+  .orbit { transform-origin: 1300px 230px; animation: spin 30s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  text { font-family: ui-monospace, Consolas, "Courier New", monospace; fill: #e8e3d8; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw, .traj { stroke-dashoffset: 0; } }
+</style>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<rect width="1600" height="1000" fill="url(#G)"/>
+<rect x="40" y="40" width="1520" height="920" fill="none" stroke="#e8e3d8" stroke-opacity="0.45" stroke-width="2"/>
+<g transform="translate(300 120)" fill="none" stroke="#e8e3d8" stroke-width="1.8">
+  <path class="draw" pathLength="1" d="M60 0 C90 40 100 90 100 140 L100 640 L130 700 L130 760 L-10 760 L-10 700 L20 640 L20 140 C20 90 30 40 60 0 Z"/>
+  <path class="draw d1" pathLength="1" d="M20 140 H100 M20 380 H100 M20 400 H100 M20 640 H100"/>
+  <rect class="draw d2" pathLength="1" x="32" y="160" width="56" height="90" rx="26"/>
+  <rect class="draw d2" pathLength="1" x="32" y="262" width="56" height="104" rx="26"/>
+  <rect class="draw d3" pathLength="1" x="32" y="414" width="56" height="100" rx="26"/>
+  <rect class="draw d3" pathLength="1" x="32" y="526" width="56" height="100" rx="26"/>
+  <rect x="32" y="414" width="56" height="100" rx="26" fill="url(#hatch)" stroke="none"/>
+  <path class="draw d1" pathLength="1" d="M40 760 L30 800 H90 L80 760"/>
+  <path class="flame" d="M38 802 Q60 880 82 802 Z" fill="#ff8a3d" fill-opacity="0.85" stroke="none"/>
+  <path d="M60 50 V120" stroke-dasharray="6 6" stroke-opacity="0.6"/>
+</g>
+<g stroke="#ff8a3d" stroke-width="1.4" fill="none">
+  <path class="draw d1" pathLength="1" d="M410 300 H520 M410 418 H560 M410 470 H520 M410 590 H560 M410 900 H520"/>
+</g>
+<g font-size="15">
+  <text x="530" y="305">YÜK BÖLMESİ</text><text x="570" y="423">2. KADEME · LOX</text><text x="530" y="475">AYRILMA HALKASI</text>
+  <text x="570" y="595">1. KADEME · RP-1</text><text x="530" y="905">MOTOR · 9 × 845 kN</text>
+</g>
+<g fill="none" stroke="#e8e3d8" stroke-width="1.2" stroke-opacity="0.8">
+  <path class="draw d2" pathLength="1" d="M240 120 V880 M230 120 h20 M230 880 h20 M234 126 l12 -12 M234 886 l12 -12"/>
+</g>
+<text x="200" y="510" font-size="14" transform="rotate(-90 200 510)">70,0 m</text>
+<path class="traj" pathLength="1" d="M180 860 C420 840 640 700 820 500 S1080 170 1200 130" fill="none" stroke="#ff8a3d" stroke-width="2.4" stroke-dasharray="1"/>
+<path d="M180 860 C420 840 640 700 820 500 S1080 170 1200 130" fill="none" stroke="#e8e3d8" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="4 8"/>
+<g class="craft"><path d="M-14 -4 L10 -4 L18 0 L10 4 L-14 4 Z" fill="#e8e3d8"/><path class="flame" d="M-14 -3 L-30 0 L-14 3 Z" fill="#ff8a3d"/></g>
+<g fill="#ff8a3d"><circle cx="560" cy="770" r="5"/><circle cx="900" cy="410" r="5"/><circle cx="1120" cy="170" r="5"/></g>
+<g font-size="13" opacity="0.85"><text x="572" y="790">MAX-Q · T+01:12</text><text x="912" y="430">MECO · T+02:34</text><text x="1060" y="200">SECO · T+08:47</text></g>
+<g fill="none" stroke="#e8e3d8" stroke-opacity="0.35" stroke-width="1.2"><ellipse cx="1300" cy="230" rx="170" ry="60"/><circle cx="1300" cy="230" r="34" stroke-opacity="0.7"/></g>
+<g class="orbit"><circle cx="1470" cy="230" r="5" fill="#ff8a3d"/></g>
+<g transform="translate(1160 790)" fill="none" stroke="#e8e3d8" stroke-opacity="0.6" stroke-width="1.4"><rect width="380" height="130"/><path d="M0 44 H380 M0 88 H380 M190 44 V130"/></g>
+<g font-size="14">
+  <text x="1176" y="818">PROJE: ARGE-7 FIRLATMA ARACI</text>
+  <text x="1176" y="862">ÖLÇEK 1:250</text><text x="1366" y="862">PAFTA 03/12</text>
+  <text x="1176" y="906">DURUM: UÇUŞTA</text><text x="1366" y="906" class="blink" fill="#ff8a3d">● T+00:42</text>
+</g>
+</svg>`,
+  },
+  {
+    id: 'defter',
+    label: 'Mühendislik Defteri',
+    blurb: 'Kareli kâğıtta kurşun kalemle köprü hesabı',
+    alt: 'Kareli mühendislik defterinde kurşun kalemle çizilen bir kafes köprü ve kuvvet hesapları',
+    glass: { blur: 3, opacity: 0.58 },
+    def: {
+      label: 'Mühendislik Defteri',
+      roles: { accent: '#2a5db0', danger: '#c0392b', success: '#2f7d4a', warning: '#a8701a', pro: '#6b4fa0' },
+      light: {
+        gray: {
+          anchors: {
+            'surface-0': '#e6ede4',
+            'surface-1': '#eef3ec',
+            'surface-2': '#f7faf5',
+            'text-primary': '#132018',
+            'text-secondary': '#324238',
+            'text-muted': '#4d5e53',
+          },
+        },
+      },
+      dark: {
+        roles: { accent: '#7fb0ff' },
+        gray: {
+          anchors: {
+            'surface-0': '#0e1411',
+            'surface-1': '#131b16',
+            'surface-2': '#18221c',
+            'surface-3': '#1d2821',
+            'text-primary': '#eef4ef',
+            'text-secondary': '#c8d4cb',
+            'text-muted': '#a0aea4',
+          },
+        },
+      },
+    },
+    scene: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" style="--paper:#eef3ea;--grid:#7fb08c;--pencil:#3f4440;--pen:#2a5db0;--red:#c0392b">
+<defs>
+  <pattern id="g1" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0 H0 V20" fill="none" style="stroke:var(--grid)" stroke-opacity="0.22"/></pattern>
+  <pattern id="g2" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M100 0 H0 V100" fill="none" style="stroke:var(--grid)" stroke-opacity="0.45"/></pattern>
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="2"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" style="fill:var(--pen)"/></marker>
+</defs>
+<style>
+  @media (prefers-color-scheme: dark) { svg { --paper:#101814 !important; --grid:#5f9a74 !important; --pencil:#d5dbd6 !important; --pen:#8ab8ff !important; --red:#ff7b6b !important; } }
+  .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 22s ease-in-out infinite; }
+  .d1 { animation-delay: 0.7s; } .d2 { animation-delay: 1.4s; } .d3 { animation-delay: 2.2s; } .d4 { animation-delay: 2.9s; } .d5 { animation-delay: 3.6s; }
+  @keyframes draw { 0% { stroke-dashoffset: 1; } 30%, 88% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  .write { animation: write 22s ease-in-out infinite; }
+  .w1 { animation-delay: 1.2s; } .w2 { animation-delay: 2.4s; } .w3 { animation-delay: 3.6s; }
+  @keyframes write { 0%, 18% { opacity: 0; } 30%, 88% { opacity: 1; } 100% { opacity: 0; } }
+  .push { animation: push 3s ease-in-out infinite alternate; }
+  @keyframes push { from { transform: translateY(-6px); } to { transform: translateY(4px); } }
+  .pencil { animation: pencil 22s ease-in-out infinite; }
+  @keyframes pencil { 0% { transform: translate(0, 0) rotate(0deg); } 25% { transform: translate(-380px, 60px) rotate(-6deg); } 50% { transform: translate(-120px, 180px) rotate(4deg); } 75% { transform: translate(-460px, -40px) rotate(-2deg); } 100% { transform: translate(0, 0) rotate(0deg); } }
+  text { font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .draw { stroke-dashoffset: 0; } .write { opacity: 1; } }
+</style>
+<rect width="1600" height="1000" style="fill:var(--paper)"/>
+<rect width="1600" height="1000" fill="url(#g1)"/>
+<rect width="1600" height="1000" fill="url(#g2)"/>
+<line x1="120" y1="0" x2="120" y2="1000" style="stroke:var(--red)" stroke-opacity="0.55" stroke-width="2"/>
+<g fill="none" style="stroke:var(--pencil)" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
+  <path class="draw" pathLength="1" d="M800 620 H1460" stroke-width="3"/>
+  <path class="draw d1" pathLength="1" d="M800 620 L910 460 L1020 620 L1130 460 L1240 620 L1350 460 L1460 620" stroke-width="2.4"/>
+  <path class="draw d2" pathLength="1" d="M910 460 H1350" stroke-width="2.4"/>
+  <path class="draw d3" pathLength="1" d="M780 620 l20 0 l-10 26 Z M770 652 h40 M1440 620 h40 l-20 26 Z M1450 656 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M1466 656 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M1440 668 h40" stroke-width="2"/>
+  <g stroke-width="1.6"><path class="draw d4" pathLength="1" d="M800 700 H1460 M800 690 v20 M1130 690 v20 M1460 690 v20"/></g>
+</g>
+<g fill="none" style="stroke:var(--pen)" stroke-width="2.6" marker-end="url(#arrow)">
+  <g class="push"><path d="M1130 340 V440"/><path d="M910 360 V440" stroke-width="2"/><path d="M1350 360 V440" stroke-width="2"/></g>
+  <path class="draw d3" pathLength="1" d="M800 760 V650"/><path class="draw d3" pathLength="1" d="M1460 760 V650"/>
+</g>
+<g style="fill:var(--pen)" font-size="22">
+  <text class="write" x="1144" y="360">P = 24 kN</text>
+  <text class="write w1" x="740" y="790">R<tspan font-size="14" dy="6">A</tspan><tspan dy="-6"> = 12 kN</tspan></text>
+  <text class="write w1" x="1400" y="790">R<tspan font-size="14" dy="6">B</tspan><tspan dy="-6"> = 12 kN</tspan></text>
+</g>
+<g style="fill:var(--pencil)" font-size="20">
+  <text class="write w2" x="1100" y="735">L = 12,0 m</text>
+  <text class="write w2" x="960" y="450" font-size="16">h = 3 m</text>
+</g>
+<g style="fill:var(--pencil)" font-size="24">
+  <text class="write" x="170" y="150">Kafes köprü — düğüm noktası yöntemi</text>
+  <text class="write w1" x="170" y="220">ΣF<tspan font-size="16" dy="6">y</tspan><tspan dy="-6"> = 0  →  R</tspan><tspan font-size="16" dy="6">A</tspan><tspan dy="-6"> + R</tspan><tspan font-size="16" dy="6">B</tspan><tspan dy="-6"> = P</tspan></text>
+  <text class="write w2" x="170" y="280">ΣM<tspan font-size="16" dy="6">A</tspan><tspan dy="-6"> = 0  →  R</tspan><tspan font-size="16" dy="6">B</tspan><tspan dy="-6"> · L = P · L/2</tspan></text>
+  <text class="write w3" x="170" y="340">F<tspan font-size="16" dy="6">AB</tspan><tspan dy="-6"> = R</tspan><tspan font-size="16" dy="6">A</tspan><tspan dy="-6"> / sin θ ≈ 14,4 kN</tspan></text>
+</g>
+<g class="write w3" fill="none" style="stroke:var(--red)" stroke-width="2.4"><rect x="160" y="306" width="470" height="50" rx="12" transform="rotate(-1 395 331)"/></g>
+<g fill="none" style="stroke:var(--pencil)" stroke-width="1.6" filter="url(#rough)">
+  <path class="draw d4" pathLength="1" d="M200 520 L420 520 L310 400 Z"/>
+  <path class="draw d5" pathLength="1" d="M310 400 V520 M270 520 a40 40 0 0 0 -8 -26"/>
+</g>
+<g style="fill:var(--pencil)" font-size="18"><text class="write w2" x="236" y="508">θ</text><text class="write w3" x="200" y="560">tan θ = 3 / 2 → θ ≈ 56°</text></g>
+<g class="pencil" transform="translate(1260 300)">
+  <g transform="rotate(35)"><rect x="-8" y="-150" width="16" height="130" fill="#f2c230" stroke="#3a3a3a" stroke-width="1.4"/><rect x="-8" y="-168" width="16" height="18" fill="#e58a9a" stroke="#3a3a3a" stroke-width="1.4"/><rect x="-8" y="-150" width="16" height="6" fill="#b9b9b9"/><path d="M-8 -20 L0 0 L8 -20 Z" fill="#e8c9a0" stroke="#3a3a3a" stroke-width="1.4"/><path d="M-2.5 -6 L0 0 L2.5 -6 Z" fill="#3a3a3a"/></g>
+</g>
+<g style="fill:var(--pencil)" font-size="16" opacity="0.7"><text x="1380" y="80">Sayfa 47</text><text x="1380" y="104">16.11.2026</text></g>
+</svg>`,
+  },
 ]
 
 const DEFAULT_ID = 'kapadokya'
